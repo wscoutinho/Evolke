@@ -1,0 +1,11 @@
+# Ignorar todos os arquivos .log
+*.log
+
+# Ignorar todos os diretorios indicados
+node_modules/
+dist/
+
+# Ignorar arquivos especificos
+package.json
+package-lock.json
+generateIndex.txt

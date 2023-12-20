@@ -1,5 +1,377 @@
-<html>
-  <head><title>Evolke</title></head>
-<body>
-  <h3>Evolke</h3>
-  <p>O Evolke é um software desenvolvido para a gestão da carreiras de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.</p></body></html>
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>Read Me</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {
+  font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  main {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+
+main {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:visited {
+  color: #0366d6;
+}
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0.2em 0.4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #24292e;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  color: #24292e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+li + li {
+  margin-top: 0.25em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #24292e;
+}
+
+a:visited {
+  color: #0366d6;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 1px solid #eaecef;
+  color: #111;
+  /* Darker */
+}
+
+            </style>
+            <style>
+            pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}
+            </style>
+          </head>
+          <body>
+            <main>
+        <h3 id="o-evolke">O Evolke</h3>
+<p>O Evolke é um software desenvolvido para a <strong>gestão da carreiras</strong> de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.</p>
+<h3 id="versão-2200-12122023">Versão 2.2.0.0 (12/12/2023)</h3>
+<p>O que há de novo nesta versão?</p>
+<p>[SISTEMA]</p>
+<ul>
+<li>Distribuição do sistema alterada para a arquitetura de software de 64 bits.</li>
+<li>Inclusão de atalho para o sistema no menu de contexto do SO Windows.</li>
+<li>Ajuste para suporte a drivers ODBC MySQL de 64 bits, apos ajuste - versão compatível recomendada MySQL ODBC 8.0.32, disponível em <a href="https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi">https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi</a>.</li>
+<li>Abrangente remodelagem da infraestrutura de código fonte do software para implementação de suporte a transposições entre diferentes estruturas de carreiras ao longo da vida funcional do vínculo.</li>
+<li>Função "Estrutura Mínima de Carreira" aprimorada e renomeada para "Projeção de Carreira", que realiza a análise de ocorrências e a prioriza sobre o histórico de posicionamentos, exceto quando houver enquadramento/transposição, posicionamento por titulação/capacitação ou decisão administrativa.</li>
+<li>Em Minhas Preferências, inclusão de opções para seleção de monitor de vídeo.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Cadastro de Pessoas renomeado para Cadastro de Pessoas Físicas.</li>
+<li>Em Cadastro de Pessoas Físicas, ajustes e melhorias de desempenho.</li>
+<li>Em Ações de Desenvolvimento, ajustes de layout e melhoria do mecanismo de pesquisa.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Histórico de Posicionamentos, inclusão das opções de Notificações Eletrônicas e acesso à Central de Notificações no menu de contexto do grid superior de vínculos.</li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajuste de regra que permite realizar progressão que não seja por capacitação em DL de Progressão por Capacitação e, se ocorrer, marcar como posicionamento por titulação/capacitação - recurso especialmente aplicável para o desenvolvimento na estrutura de carreira do Plano Único de Classificação e Retribuição de Cargos e Empregos (PUCRCE);</li>
+<li>Inclusão de filtros extras em Filtros Dinâmicos.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Tela Análise de Ocorrências e Projeção de Carreira simplificada, com remoção da distinção entre os tipos de análise individual e em lote, os quais passam a ser tratados como um único tipo.</li>
+<li>Em Central de Notificações, inclusão da tag <REGVINCMULTICONC-MSG>, a ser substituída por informação de vínculos com mais de uma concessão considerando os DLs selecionados para envio.</li>
+<li>Em Integração Sistêmica, ajustes na integração de Ações de Desenvolvimento, em razão do arredondamento de carga horária existente no arquivo importado (Ex.: Curso com carga horária "42:30" informado como "43" no arquivo).</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, em Progressões e Concessões Efetivadas, inclusão do filtro "por vínculo/lotação" no menu de contexto, o qual realiza a pesquisa considerando as unidades de lotação selecionadas em vez dos DL associados à unidade logada pelo usuário.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Em diversas telas do sistema, nos grids em que a função de clique sobre o título das colunas estiver habilitada, inclusão da múltipla seleção de colunas, ao clicar-se sobre seus títulos mantendo-se a tecla Ctrl pressionada, para ordenação dos registros.</li>
+<li>Ajustes e melhorias na tela Pesquisa de Pessoas Físicas.</li>
+<li>Ajustes e melhorias nas configurações de seleção de monitor de vídeo.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+            </main>
+          </body>
+        </html>
