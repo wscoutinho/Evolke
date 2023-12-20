@@ -1,2 +1,2 @@
 # Evolke
-Gestão de Carreiras e Pessoas
+O Evolke é um software desenvolvido para a gestão da carreiras de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.
