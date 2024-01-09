@@ -4,45 +4,29 @@ O Evolke é um software desenvolvido para a **gestão da carreiras** de servidor
 
 [Histórico de Versões](https://github.com/wscoutinho/Evolke/releases)
 
-### Versão 2.2.0.0 (12/12/2023)
+### Versão 2.2.1.0 (09/01/2024)
 
 O que há de novo nesta versão?
 
-[SISTEMA]
-
-- Distribuição do sistema alterada para a arquitetura de software de 64 bits.
-- Inclusão de atalho para o sistema no menu de contexto do SO Windows.
-- Ajuste para suporte a drivers ODBC MySQL de 64 bits, apos ajuste - versão compatível recomendada MySQL ODBC 8.0.32, disponível em https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi.
-- Abrangente remodelagem da infraestrutura de código fonte do software para implementação de suporte a transposições entre diferentes estruturas de carreiras ao longo da vida funcional do vínculo.
-- Função "Estrutura Mínima de Carreira" aprimorada e renomeada para "Projeção de Carreira", que realiza a análise de ocorrências e a prioriza sobre o histórico de posicionamentos, exceto quando houver enquadramento/transposição, posicionamento por titulação/capacitação ou decisão administrativa.
-- Em Minhas Preferências, inclusão de opções para seleção de monitor de vídeo.
-
-[CADASTRO]
-
-- Cadastro de Pessoas renomeado para Cadastro de Pessoas Físicas.
-- Em Cadastro de Pessoas Físicas, ajustes e melhorias de desempenho.
-- Em Ações de Desenvolvimento, ajustes de layout e melhoria do mecanismo de pesquisa.
-
 [CARREIRAS]
 
-- Em Histórico de Posicionamentos, inclusão das opções de Notificações Eletrônicas e acesso à Central de Notificações no menu de contexto do grid superior de vínculos.
-- Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:
-  - Ajuste de regra que permite realizar progressão que não seja por capacitação em DL de Progressão por Capacitação e, se ocorrer, marcar como posicionamento por titulação/capacitação - recurso especialmente aplicável para o desenvolvimento na estrutura de carreira do Plano Único de Classificação e Retribuição de Cargos e Empregos (PUCRCE);
-  - Inclusão de filtros extras em Filtros Dinâmicos.
+- Em Histórico de Posicionamentos e Progressões Funcionais, inclusão dos itens "Outras" no filtro Categoria e "Avaliação" no filtro
+  Carreira TAE, agora renomeado para Tipo, que permitem expandir a consulta a outras designações de carreira além de TAE e
+  DOCENTE e outros tipos além de Mérito (M), Capacitação (C) e Único (U).
+- Em Progressões Funcionais, inclusão de filtro extra em Filtros Dinâmicos para obter todos os vínculos que podem acelerar ou
+  progregir por titulação/capacitação, independente da existência de progressão funcional pendente.
 
 [FERRAMENTAS]
 
-- Tela Análise de Ocorrências e Projeção de Carreira simplificada, com remoção da distinção entre os tipos de análise individual e em lote, os quais passam a ser tratados como um único tipo.
-- Em Central de Notificações, inclusão da tag <REGVINCMULTICONC-MSG>, a ser substituída por informação de vínculos com mais de uma concessão considerando os DLs selecionados para envio.
-- Em Integração Sistêmica, ajustes na integração de Ações de Desenvolvimento, em razão do arredondamento de carga horária existente no arquivo importado (Ex.: Curso com carga horária "42:30" informado como "43" no arquivo).
-
-[RELATÓRIOS]
-
-- Em Listagens, em Progressões e Concessões Efetivadas, inclusão do filtro "por vínculo/lotação" no menu de contexto, o qual realiza a pesquisa considerando as unidades de lotação selecionadas em vez dos DL associados à unidade logada pelo usuário.
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - Inclusão de opções de análise, agrupando opções existentes e acrescentando a opção "desconsiderar decisão administrativa",
+    o que permite realizar projeções outras que não considerem posicionamentos cadastrados como decisão administativa;
+  - Ajuste na rotina de projeção para considerar a titulação do vínculo na data de vigência de cada posicionamento cadastrado, e
+    não a titulação atual, o que permite melhor adequação da projeção.
 
 [OUTROS]
 
-- Em diversas telas do sistema, nos grids em que a função de clique sobre o título das colunas estiver habilitada, inclusão da múltipla seleção de colunas, ao clicar-se sobre seus títulos mantendo-se a tecla Ctrl pressionada, para ordenação dos registros.
-- Ajustes e melhorias na tela Pesquisa de Pessoas Físicas.
-- Ajustes e melhorias nas configurações de seleção de monitor de vídeo.
+- Correções pontuais de bugs provenientes da nova implementação do suporte a múltiplas carreiras.
+- Correção da rotina de atualização diária automática da vigência prevista para vínculos que possuem vigente ocorrência que
+  suspende a contagem do interstício atual para a próxima progressão.
 - Melhorias pontuais de estabilidade e prevenção de bugs.
