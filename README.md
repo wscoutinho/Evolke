@@ -4,12 +4,12 @@ O Evolke é um software desenvolvido para a **gestão da carreiras** de servidor
 
 Pré-requisitos (primeira instalação):
 
-- [Visual C++ Redistributable](/assets/VC_redist.x86.exe)
-- [Conector ODBC MySQL](/assets/mysql_8.3.0.msi)
+- [Visual C++ Redistributable](https://github.com/wscoutinho/Evolke/releases/download/Evolke2.2.2/VC_redist.x86.exe)
+- [Conector ODBC MySQL](https://github.com/wscoutinho/Evolke/releases/download/Evolke2.2.2/mysql_8.3.0.msi)
 
 Download Evolke:
 
-- [Versão atual (Latest)](/Evolke%202.2.2.0%20Setup.exe)
+- [Versão atual (Latest)](https://github.com/wscoutinho/Evolke/releases/download/Evolke2.2.2/Evolke.2.2.2.0.Setup.exe)
 
 ---
 
