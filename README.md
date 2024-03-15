@@ -4,12 +4,12 @@ O Evolke é um software desenvolvido para a **gestão da carreiras** de servidor
 
 Pré-requisitos (primeira instalação):
 
-- [Visual C++ Redistributable](https://github.com/wscoutinho/Evolke/releases/download/Evolke2.2.2/VC_redist.x86.exe)
-- [Conector ODBC MySQL](https://github.com/wscoutinho/Evolke/releases/download/Evolke2.2.2/mysql_8.3.0.msi)
+- [Visual C++ Redistributable](https://github.com/wscoutinho/Evolke/raw/main/assets/VC_redist.x86.exe)
+- [Conector ODBC MySQL 8.3](https://github.com/wscoutinho/Evolke/raw/main/assets/mysql_8.3.0.msi)
 
 Download Evolke:
 
-- [Versão atual (Latest)](https://github.com/wscoutinho/Evolke/releases/download/Evolke2.2.2/Evolke.2.2.2.0.Setup.exe)
+- [Versão atual (Latest)](https://github.com/wscoutinho/Evolke/releases)
 
 ---
 
@@ -27,6 +27,10 @@ O que há de novo? Confirma as notas de versão:
 - Em Cadastro de Unidades Organizacionais, realizadas as seguintes inclusões e melhorias:
   - Inclusão do cadastro de Contatos e Dirigentes, possibilitando o registro atual e histórico de titulares e substitutos e respectivos contatos de e-mail e telefone;
   - Inclusão, no menu de contexto, de opções de acesso ao cadastro e ao relatório de Contatos e Dirigentes.
+
+[CARREIRAS]
+
+- Em Progressões Funcionais, correção na função Alterar DL Vinculado em Lote.
 
 [RELATÓRIOS]
 
