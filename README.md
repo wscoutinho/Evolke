@@ -15,7 +15,43 @@ Download Evolke:
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.2.3.0 (Atual)
+### Versão 2.2.4.0 (Atual)
+
+[SISTEMA]
+
+- Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a diferentes regras de carreiras (progressões, concessões e transposições) ao longo da vida funcional do vínculo (o mesmo cargo de uma única carreira pode, ao longo do tempo, variar em suas regras de progressões e/ou concessões).
+
+[CADASTRO]
+
+- Em Cadastro de Diplomas Legais, melhoria do mecanismo de pesquisa.
+- Novo Cadastro de Carreiras e Cargos que, além do cadastro básico, permite configurar estruturas de carreiras, regras de progressões e concessões e configurações de transposição entre diferentes carreiras e/ou regras.
+
+[CARREIRAS]
+
+- Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Ajuste na pesquisa de progressões para remoção dos casos em que houver RT em concessão com pendência;
+  - Ajuste na Consulta de DL;
+  - Ajuste no filtro de seleção exceto em processamento, com inclusão da exceção para vínculos licenciados;
+  - Remoção da verificação de vigência mínima, tendo em vista que outros recursos já realizam essa verificação implícita;
+  - Ajustes para alternância entre diferentes regras de progressões.
+- Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Ajuste na Consulta de DL;
+  - Na exportação de minuta de DL em formato de documento de texto, correção na exibição da RT equivalente ao RSC;
+  - Inclusão de opção de alteração de posicionamentos em lote, no menu de contexto do grid inferior, destinado ao enquadramento/transposição para nova carreira, cujas correspondências devem estar previamente configuradas;
+  - Ajustes para alternância entre diferentes regras de concessões.
+- Em Histórico de Posicionamentos, no painel inferior, inclusão do grupo "Dados do Posicionamento", com agrupamento de informações relacionadas.
+
+[RELATÓRIOS]
+
+- Em Relatórios Gráficos, ajuste do relatório "Posicionamentos na Carreira", para incluir as diversas regras existentes.
+
+[OUTROS]
+
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.2.3.0 (14/03/2024)
 
 [SISTEMA]
 
@@ -1069,7 +1105,7 @@ O que há de novo? Confirma as notas de versão:
 
 [OUTROS]
 
-- Nas telaPesquisar DL, DLs ocultos são destacados na cor cinza.
+- Nas tela Pesquisar DL, DLs ocultos são destacados na cor cinza.
 - Melhorias pontuais diversas de estabilidade e prevenção de bugs.
 
 ---
