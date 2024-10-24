@@ -15,7 +15,48 @@ Download Evolke:
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.2.4.0 (Atual)
+### Versão 2.2.4.1 (Atual)
+
+[SISTEMA]
+
+- Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a diferentes relações entre Textos-Padrão de Assuntos de Diploma Legal e regras de carreiras (progressões, concessões e transposições), com o respectivo ajuste nas funções "Editar Portaria (MS Word)".
+
+[CADASTRO]
+
+- Em Cadastro de Carreiras e Cargos, inclusão da clonagem de regras de desenvolvimento e concessão.
+- Novo Cadastro de Assuntos de Diplomas Legais.
+
+[CARREIRAS]
+
+- Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Inclusão da opção "Consultar... Dossiê do Vínculo" no menu de contexto do grid superior;
+  - Ajustes e novo designa do filtro "Tipo de Concessão".
+- Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Ajustes no Filtros "Selecionar... Exceto Em Processamento e Licenciados";
+  - Correção na geração de minuta de portaria, para exibir corretamente a denominação do posicionamento, se houver.
+- Em Histórico de Posicionamentos, realizadas as seguintes inclusões e melhorias:
+  - Correção no recurso "Retificar Posicionamento";
+  - Substituição do recurso "Análise de Inconsistências" por "Filtros Adicionais de Pesquisa", uma vez que a análise é melhor realizada em Análise de Ocorrências e Projeção de Carreira.
+
+[FERRAMENTAS]
+
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - Correções pontuais no processo de construção/simulação da carreira, em razão da implementação do novo suporte a diferentes regras de desenvolvimento na carreira;
+  - Inclusão, no menu de contexto da análise, do recurso "Editar > Reprocessar (Alterações)", que permite, após editadas ou excluídas ocorrências funcionais, realizar projeções simuladas sob os efeitos das alterações;
+  - Inclusão das opções de análise "Exibir projeção integral da carreira" e "Reprocessar alterações por padrão ao utilizar tecla de atalho (F5)", essa últim com vistas a facilitar a realização de projeções simuladas.
+
+[RELATÓRIOS]
+
+- Em Relatórios Gerais, correção de um erro que impedia a geração do relatório Dossiê do Vínculo.
+- Em Dashboard, correção de um erro que impedia a geração dos gráficos.
+
+[OUTROS]
+
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.2.4.0 (01/10/2024)
 
 [SISTEMA]
 
