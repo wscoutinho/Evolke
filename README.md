@@ -15,7 +15,44 @@ Download Evolke:
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.2.4.1 (Atual)
+### Versão 2.2.5.0 (Atual)
+
+[SISTEMA]
+
+- Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a diferentes relações entre Textos-Padrão de Assuntos de Diploma Legal e regras de carreiras (progressões, concessões e transposições).
+
+[TELA PRINCIPAL]
+
+- Layout padrão do desktop alterado de Ícones para Detalhes, configurável pelo usuário na tela Minhas Preferências.
+
+[CADASTRO]
+
+- Em Registro de Ocorrências Funcionais, ampliação do rol de perfis de usuário com acesso para exclusão de ocorrências, por meio da opção "Excluir Ocorrência", disponível no menu de contexto do grid inferior.
+
+[CARREIRAS]
+
+- Em Progressões e Concessões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Ajustes e melhoria de design no painel de botões do grid inferior;
+  - Correção na verificação periódica de alterações recentes no estado do DL aberto realizadas por outro usuário;
+  - Ajustes na função "Editar Portaria (MS Word)", de modo a permitir o trato de diferentes textos-padrão, de variadas regras e suas respectivas legislações, para cada tipo de progressão ou concessão, e ajustes para DLs de retificação.
+- Em Concessões Funcionais, inclusão da opção "Excluir Concessão" no menu de contexto do grid superior.
+
+[FERRAMENTAS]
+
+- Em Análise de Ocorrências e Projeção de Carreira, ajuste na rotina de projeção para melhor cômputo de interstícios quando da transição/enquadramento entre diferentes regras de desenvolvimento.
+
+[RELATÓRIOS]
+
+- Em Listagens, Progressões e Concessões com Pendências, inclusão das opções "Pendência" e "Anotações" no menu de contexto, viabilizando a edição rápida dessas informações, como a inclusão ou exclusão de notas e a baixa de pendências.
+
+[OUTROS]
+
+- Melhorias de design de botões em diversas telas do sistema.
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.2.4.1 (24/10/2024)
 
 [SISTEMA]
 
