@@ -4,18 +4,52 @@ O Evolke é um software desenvolvido para a **gestão da carreiras** de servidor
 
 Pré-requisitos (primeira instalação):
 
-- [Visual C++ Redistributable](https://github.com/wscoutinho/Evolke/raw/main/assets/VC_redist.x86.exe)
-- [Conector ODBC MySQL 8.3](https://github.com/wscoutinho/Evolke/raw/main/assets/mysql_8.3.0.msi)
-
-Download Evolke:
-
-- [Versão atual (Latest)](https://github.com/wscoutinho/Evolke/releases)
+- [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x86.exe)
+- [Conector ODBC MySQL 8.3](https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.3.0-winx64.msi)
 
 ---
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.2.5.0 (Atual)
+### Versão 2.3.0.0 (Atual)
+
+[CADASTRO]
+
+- Em Cadastro de Carreiras e Cargos, realizadas as seguintes inclusões e melhorias:
+  - Cadastro das estruturas de carreiras para TAEs e docentes conforme Medida Provisória nº 1.286/2024;
+  - Inclusão de opção de habilitação do cômputo de saldo de interstício anterior na configuração da Regra de Desenvolvimento.
+- Em Cadastro de Assuntos de Diplomas Legais, inclusão do novo assunto "Aceleração da Progressão por Capacitação" e registro de termo final para os assuntos não mais vigentes, conforme Medida Provisória nº 1.286/2024.
+
+[CARREIRAS]
+
+- Em Progressões e Concessões Funcionais, inclusão do recurso Opções Adicionais nos menus de contexto dos grids inferiores, com agrupamento de recursos especiais como inserção histórica, configuração do DL e operações de transposição.
+- Em Concessões Funcionais, implementados ajustes para a realização de enquadramento/transposição de concessões, inclusive como inserção histórica (sem vinculação a DL no sistema).
+- Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Ajustes na inclusão de posicionamento selecionado para DLs de retificação;
+  - Inclusão do recurso de anulação de posicionamento (tornar sem efeito) para Diplomas Legais de retificação, por meio da opção "Altear > Anulação (Sem Efeito)" no menu de contexto do grid inferior;
+  - Inclusão do recurso "Alternar para DL Anterior" no botão de carregamento de Diplomas Legais;
+  - Inclusão do filtro "Vinculado a DL..." no recurso "Filtros Adicionais de Pesquisa".
+- Em Histórico de Posicionamentos, inclusão do filtro "Vinculado a DL..." no recurso "Filtros Adicionais de Pesquisa".
+
+[FERRAMENTAS]
+
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - Ajuste na rotina de projeção para melhor cômputo de interstícios quando da transição/enquadramento entre diferentes regras de desenvolvimento, bem como para o cômputo de saldo de interstício anterior, quando habilitado;
+  - Inclusão do recurso de memorização de todos os vínculos que, após análise em lote, estejam com vigência prevista calculada divergente da vigência atualmente registrada, disponível no menu de contexto do botão "Memorizar".
+
+[RELATÓRIOS]
+
+- Em Relatórios Gerais, realizadas as seguintes inclusões e melhorias:
+  - Correção de visualização do relatório Progressões e Concessões Realizadas, quando incluído, dentre vários Diplomas Legais selecionados, um Diploma Legal de retificação;
+  - Ajustes de exibição de concessão no Dossiê do Vínculo.
+
+[OUTROS]
+
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.2.5.0 (18/12/2024)
 
 [SISTEMA]
 

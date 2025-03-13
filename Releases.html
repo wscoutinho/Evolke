@@ -1,0 +1,1576 @@
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>Read Me</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {
+  font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  main {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+
+main {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:visited {
+  color: #0366d6;
+}
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0.2em 0.4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #24292e;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  color: #24292e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+li + li {
+  margin-top: 0.25em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #24292e;
+}
+
+a:visited {
+  color: #0366d6;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 1px solid #eaecef;
+  color: #111;
+  /* Darker */
+}
+
+            </style>
+            <style>
+            pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}
+            </style>
+          </head>
+          <body>
+            <main>
+        <h3 id="o-evolke">O Evolke</h3>
+<p>O Evolke é um software desenvolvido para a <strong>gestão da carreiras</strong> de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.</p>
+<p>Pré-requisitos (primeira instalação):</p>
+<ul>
+<li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe">Visual C++ Redistributable</a></li>
+<li><a href="https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.3.0-winx64.msi">Conector ODBC MySQL 8.3</a></li>
+</ul>
+<hr />
+<p>O que há de novo? Confirma as notas de versão:</p>
+<h3 id="versão-2300-atual">Versão 2.3.0.0 (Atual)</h3>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Carreiras e Cargos, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Cadastro das estruturas de carreiras para TAEs e docentes conforme Medida Provisória nº 1.286/2024;</li>
+<li>Inclusão de opção de habilitação do cômputo de saldo de interstício anterior na configuração da Regra de Desenvolvimento.</li></ul></li>
+<li>Em Cadastro de Assuntos de Diplomas Legais, inclusão do novo assunto "Aceleração da Progressão por Capacitação" e registro de termo final para os assuntos não mais vigentes, conforme Medida Provisória nº 1.286/2024.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, inclusão do recurso Opções Adicionais nos menus de contexto dos grids inferiores, com agrupamento de recursos especiais como inserção histórica, configuração do DL e operações de transposição.</li>
+<li>Em Concessões Funcionais, implementados ajustes para a realização de enquadramento/transposição de concessões, inclusive como inserção histórica (sem vinculação a DL no sistema).</li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes na inclusão de posicionamento selecionado para DLs de retificação;</li>
+<li>Inclusão do recurso de anulação de posicionamento (tornar sem efeito) para Diplomas Legais de retificação, por meio da opção "Altear &gt; Anulação (Sem Efeito)" no menu de contexto do grid inferior;</li>
+<li>Inclusão do recurso "Alternar para DL Anterior" no botão de carregamento de Diplomas Legais;</li>
+<li>Inclusão do filtro "Vinculado a DL…" no recurso "Filtros Adicionais de Pesquisa".</li></ul></li>
+<li>Em Histórico de Posicionamentos, inclusão do filtro "Vinculado a DL…" no recurso "Filtros Adicionais de Pesquisa".</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajuste na rotina de projeção para melhor cômputo de interstícios quando da transição/enquadramento entre diferentes regras de desenvolvimento, bem como para o cômputo de saldo de interstício anterior, quando habilitado;</li>
+<li>Inclusão do recurso de memorização de todos os vínculos que, após análise em lote, estejam com vigência prevista calculada divergente da vigência atualmente registrada, disponível no menu de contexto do botão "Memorizar".</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Relatórios Gerais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Correção de visualização do relatório Progressões e Concessões Realizadas, quando incluído, dentre vários Diplomas Legais selecionados, um Diploma Legal de retificação;</li>
+<li>Ajustes de exibição de concessão no Dossiê do Vínculo.</li></ul></li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2250-18122024">Versão 2.2.5.0 (18/12/2024)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a diferentes relações entre Textos-Padrão de Assuntos de Diploma Legal e regras de carreiras (progressões, concessões e transposições).</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Layout padrão do desktop alterado de Ícones para Detalhes, configurável pelo usuário na tela Minhas Preferências.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Registro de Ocorrências Funcionais, ampliação do rol de perfis de usuário com acesso para exclusão de ocorrências, por meio da opção "Excluir Ocorrência", disponível no menu de contexto do grid inferior.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes e melhoria de design no painel de botões do grid inferior;</li>
+<li>Correção na verificação periódica de alterações recentes no estado do DL aberto realizadas por outro usuário;</li>
+<li>Ajustes na função "Editar Portaria (MS Word)", de modo a permitir o trato de diferentes textos-padrão, de variadas regras e suas respectivas legislações, para cada tipo de progressão ou concessão, e ajustes para DLs de retificação.</li></ul></li>
+<li>Em Concessões Funcionais, inclusão da opção "Excluir Concessão" no menu de contexto do grid superior.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Análise de Ocorrências e Projeção de Carreira, ajuste na rotina de projeção para melhor cômputo de interstícios quando da transição/enquadramento entre diferentes regras de desenvolvimento.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, Progressões e Concessões com Pendências, inclusão das opções "Pendência" e "Anotações" no menu de contexto, viabilizando a edição rápida dessas informações, como a inclusão ou exclusão de notas e a baixa de pendências.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias de design de botões em diversas telas do sistema.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2241-24102024">Versão 2.2.4.1 (24/10/2024)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a diferentes relações entre Textos-Padrão de Assuntos de Diploma Legal e regras de carreiras (progressões, concessões e transposições), com o respectivo ajuste nas funções "Editar Portaria (MS Word)".</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Carreiras e Cargos, inclusão da clonagem de regras de desenvolvimento e concessão.</li>
+<li>Novo Cadastro de Assuntos de Diplomas Legais.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão da opção "Consultar… Dossiê do Vínculo" no menu de contexto do grid superior;</li>
+<li>Ajustes e novo designa do filtro "Tipo de Concessão".</li></ul></li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes no Filtros "Selecionar… Exceto Em Processamento e Licenciados";</li>
+<li>Correção na geração de minuta de portaria, para exibir corretamente a denominação do posicionamento, se houver.</li></ul></li>
+<li>Em Histórico de Posicionamentos, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Correção no recurso "Retificar Posicionamento";</li>
+<li>Substituição do recurso "Análise de Inconsistências" por "Filtros Adicionais de Pesquisa", uma vez que a análise é melhor realizada em Análise de Ocorrências e Projeção de Carreira.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Correções pontuais no processo de construção/simulação da carreira, em razão da implementação do novo suporte a diferentes regras de desenvolvimento na carreira;</li>
+<li>Inclusão, no menu de contexto da análise, do recurso "Editar &gt; Reprocessar (Alterações)", que permite, após editadas ou excluídas ocorrências funcionais, realizar projeções simuladas sob os efeitos das alterações;</li>
+<li>Inclusão das opções de análise "Exibir projeção integral da carreira" e "Reprocessar alterações por padrão ao utilizar tecla de atalho (F5)", essa últim com vistas a facilitar a realização de projeções simuladas.</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Relatórios Gerais, correção de um erro que impedia a geração do relatório Dossiê do Vínculo.</li>
+<li>Em Dashboard, correção de um erro que impedia a geração dos gráficos.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2240-01102024">Versão 2.2.4.0 (01/10/2024)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a diferentes regras de carreiras (progressões, concessões e transposições) ao longo da vida funcional do vínculo (o mesmo cargo de uma única carreira pode, ao longo do tempo, variar em suas regras de progressões e/ou concessões).</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Diplomas Legais, melhoria do mecanismo de pesquisa.</li>
+<li>Novo Cadastro de Carreiras e Cargos que, além do cadastro básico, permite configurar estruturas de carreiras, regras de progressões e concessões e configurações de transposição entre diferentes carreiras e/ou regras.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajuste na pesquisa de progressões para remoção dos casos em que houver RT em concessão com pendência;</li>
+<li>Ajuste na Consulta de DL;</li>
+<li>Ajuste no filtro de seleção exceto em processamento, com inclusão da exceção para vínculos licenciados;</li>
+<li>Remoção da verificação de vigência mínima, tendo em vista que outros recursos já realizam essa verificação implícita;</li>
+<li>Ajustes para alternância entre diferentes regras de progressões.</li></ul></li>
+<li>Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajuste na Consulta de DL;</li>
+<li>Na exportação de minuta de DL em formato de documento de texto, correção na exibição da RT equivalente ao RSC;</li>
+<li>Inclusão de opção de alteração de posicionamentos em lote, no menu de contexto do grid inferior, destinado ao enquadramento/transposição para nova carreira, cujas correspondências devem estar previamente configuradas;</li>
+<li>Ajustes para alternância entre diferentes regras de concessões.</li></ul></li>
+<li>Em Histórico de Posicionamentos, no painel inferior, inclusão do grupo "Dados do Posicionamento", com agrupamento de informações relacionadas.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Relatórios Gráficos, ajuste do relatório "Posicionamentos na Carreira", para incluir as diversas regras existentes.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2230-14032024">Versão 2.2.3.0 (14/03/2024)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Correção do modo de teste de conexão ICMPIndy (RAW Socket), que, ainda que houvesse conectividade com o servidor, indicava ausência de conectividade e impedia a plena utilização do sistema.</li>
+<li>Ajuste nas operações de backup e restore de banco de dados em razão da utilização da versão 8.3 do conector ODBC MySQL.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Unidades Organizacionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão do cadastro de Contatos e Dirigentes, possibilitando o registro atual e histórico de titulares e substitutos e respectivos contatos de e-mail e telefone;</li>
+<li>Inclusão, no menu de contexto, de opções de acesso ao cadastro e ao relatório de Contatos e Dirigentes.</li></ul></li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, correção na função Alterar DL Vinculado em Lote.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Relatórios Gerais, inclusão do relatório Contatos e Dirigentes das Unidadades Organizacionais.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2220-08022024">Versão 2.2.2.0 (08/02/2024)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Distribuição do novo driver "MySQL Connector ODBC 8.3 (64-bit)" e ajustes de compatibillidade necessários.</li>
+<li>Inclusão de novo modo de teste de conexão "DBCheck (Flag Select)" mais apurado em relação aos preexistentes e compatível com o novo driver conector MySQL ao restabelecer, via aplicação, a conexão com o banco de dados.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadatro de Diplomas Legais, inclusão dos assuntos Enquadramento/Transposição para carreiras e para concessões.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, inclusão de indicador de pendência na progressão ou concessão.</li>
+<li>Em Progressões Funcionais, inclusão do suporte a Diplomas Legais de enquadramento/transposição de carreira, com registro no histórico de posicionamentos e, se cabível, atualização do posicionamento vigente.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Relatórios Gerais, no Dossiê do Vínculo, ajuste para exibição da denominação correta de um posicionamento específico em função da titulação, quando houver, p. ex., para a classe A da Carreira do Magistério Superior, conforme Lei nº 12.772/2012.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Correções pontuais de bugs provenientes da nova implementação do suporte a múltiplas carreiras.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2210-09012024">Versão 2.2.1.0 (09/01/2024)</h3>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Histórico de Posicionamentos e Progressões Funcionais, inclusão dos itens "Outras" no filtro Categoria e "Avaliação" no filtro Carreira TAE, agora renomeado para Tipo, que permitem expandir a consulta a outras designações de carreira além de TAE e DOCENTE e outros tipos além de Mérito (M), Capacitação (C) e Único (U).</li>
+<li>Em Progressões Funcionais, inclusão de filtro extra em Filtros Dinâmicos para obter todos os vínculos que podem acelerar ou progregir por titulação/capacitação, independente da existência de progressão funcional pendente.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão de opções de análise, agrupando opções existentes e acrescentando a opção "desconsiderar decisão administrativa", o que permite realizar projeções outras que não considerem posicionamentos cadastrados como decisão administativa;</li>
+<li>Ajuste na rotina de projeção para considerar a titulação do vínculo na data de vigência de cada posicionamento cadastrado, e não a titulação atual, o que permite melhor adequação da projeção.</li></ul></li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Correções pontuais de bugs provenientes da nova implementação do suporte a múltiplas carreiras.</li>
+<li>Correção da rotina de atualização diária automática da vigência prevista para vínculos que possuem vigente ocorrência que suspende a contagem do interstício atual para a próxima progressão.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2200-12122023">Versão 2.2.0.0 (12/12/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Distribuição do sistema alterada para a arquitetura de software de 64 bits.</li>
+<li>Inclusão de atalho para o sistema no menu de contexto do SO Windows.</li>
+<li>Ajuste para suporte a drivers ODBC MySQL de 64 bits, apos ajuste - Versão compatível recomendada MySQL ODBC 8.0.32, disponível em <a href="https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi">https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi</a>.</li>
+<li>Abrangente remodelagem da infraestrutura de código fonte do software para implementação de suporte a transposições entre diferentes estruturas de carreiras ao longo da vida funcional do vínculo.</li>
+<li>Função "Estrutura Mínima de Carreira" aprimorada e renomeada para "Projeção de Carreira", que realiza a análise de ocorrências e a prioriza sobre o histórico de posicionamentos, exceto quando houver enquadramento/transposição, posicionamento por titulação/capacitação ou decisão administrativa.</li>
+<li>Em Minhas Preferências, inclusão de opções para seleção de monitor de vídeo.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Cadastro de Pessoas renomeado para Cadastro de Pessoas Físicas.</li>
+<li>Em Cadastro de Pessoas Físicas, ajustes e melhorias de desempenho.</li>
+<li>Em Ações de Desenvolvimento, ajustes de layout e melhoria do mecanismo de pesquisa.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Histórico de Posicionamentos, inclusão das opções de Notificações Eletrônicas e acesso à Central de Notificações no menu de contexto do grid superior de vínculos.</li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajuste de regra que permite realizar progressão que não seja por capacitação em DL de Progressão por Capacitação e, se ocorrer, marcar como posicionamento por titulação/capacitação - recurso especialmente aplicável para o desenvolvimento na estrutura de carreira do Plano Único de Classificação e Retribuição de Cargos e Empregos (PUCRCE);</li>
+<li>Inclusão de filtros extras em Filtros Dinâmicos.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Tela Análise de Ocorrências e Projeção de Carreira simplificada, com remoção da distinção entre os tipos de análise individual e em lote, os quais passam a ser tratados como um único tipo.</li>
+<li>Em Central de Notificações, inclusão da tag <REGVINCMULTICONC-MSG>, a ser substituída por informação de vínculos com mais de uma concessão considerando os DLs selecionados para envio.</li>
+<li>Em Integração Sistêmica, ajustes na integração de Ações de Desenvolvimento, em razão do arredondamento de carga horária existente no arquivo importado (Ex.: Curso com carga horária "42:30" informado como "43" no arquivo).</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, em Progressões e Concessões Efetivadas, inclusão do filtro "por vínculo/lotação" no menu de contexto, o qual realiza a pesquisa considerando as unidades de lotação selecionadas em vez dos DL associados à unidade logada pelo usuário.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Em diversas telas do sistema, nos grids em que a função de clique sobre o título das colunas estiver habilitada, inclusão da múltipla seleção de colunas, ao clicar-se sobre seus títulos mantendo-se a tecla Ctrl pressionada, para ordenação dos registros.</li>
+<li>Ajustes e melhorias na tela Pesquisa de Pessoas Físicas.</li>
+<li>Ajustes e melhorias nas configurações de seleção de monitor de vídeo.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2108-23082023">Versão 2.1.0.8 (23/08/2023)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>No painel de DLs Abertos, inclusão da opção "Selecionar Tudo" no menu de contexto.</li>
+<li>No painel de menus, remoção da opção Integração Sistêmica, que agora deve ser acessada somente pelo menu de contexto do sistema ou pelo menu lateral.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Ocorrências Funcionais, melhoria de desempenho ao editar ou incluir uma ocorrência.</li>
+<li>Inclusão da tela Ações de Desenvolvimento.</li>
+<li>Em Instituições Externas, melhorias de layout e desempenho.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, inclusão do carregamento de ocorrências recentes ao carregar-se um DL.</li>
+<li>Em Progressões e Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Nos menus de contexto, inclusão de opção de consulta de Ações de Desenvolvimento;</li>
+<li>Verificação entre o vínculo a ser adicionado a um DL e o tipo padrão de carreira a que se relaciona o DL, com mensagem de alerta nos casos de inclusão potencialmente incompatível.</li></ul></li>
+<li>Preparação para futura inclusão da tela Desenvolvimento de Pessoas.</li>
+<li>Análise de Ocorrências funcionais renomeada para Análise e Projeção de Carreira e movida para o módulo Ferramentas.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Análise e Projeção de Carreira movida do módulo Carreiras.</li>
+<li>Em Integração Sistêmica, inclusão da importação de Instituições Externas e de Ações de Desenvolvimento.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Ajustes e melhorias na Pesquisa de Instituição Externa.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2107-21062023">Versão 2.1.0.7 (21/06/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Tela "Preferências do Usuário" renomeada para "Minhas Preferências".</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Concessões Funcionais, ajuste na titulação equivalente ao RSC a ser mostrado na minuta de portaria MS Word.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Integração Sistêmica, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Correção na importação de licenças quando selecionada a opção de inclusão de vínculos inativos, de maneira a evitar o registro de ocorrências em duplicidade;</li>
+<li>Inclusão da importação padrão de registros de Licença para Capacitação.</li></ul></li>
+<li>Em Central de Notificações, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes na rotina de envio de Mala Direta;</li>
+<li>Novas TAGs adicionadas para configuração de Mala Direta;</li>
+<li>Inclusão da origem de dados Planilha Eletrônica na configuração de Mala Direta.</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, inclusão da coluna Progride na listagem Licenças para Tratamento de Saúde (Controle), que permite identificar melhor os vínculos que ainda possuem progressão funcional a realizar.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Simplificação do aviso visual de ausência de conectividade com o servidor nas telas do sistema.</li>
+<li>Correções necessárias para compatibilidade com o SO Windows 7 e na operação de logoff.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2106-02052023">Versão 2.1.0.6 (02/05/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Em Configurações de Sistema, inclusão das seguintes novas configurações:<ul>
+<li>Definição de valor padrão (Sim/Não) para o campo Pendência da inclusão de nova concessão na tela de Concessões Funcionais, para cada tipo de concessão;</li>
+<li>Retribuição por Titulação com status pendente verifica e atualiza previsão de progressão (Padrão: desativado).</li></ul></li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Na barra de status, inclusão de indicador visual de conectividade nula ou limitada quando o desempenho corrente da conexão com o servidor, isto é, dos últimos testes de conexão, encontra-se abaixo do percentual mínimo recomendado (90%).</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Histórico de Posicionamentos, incremento na possibilidade de expansão do grid inferior, para melhor visualização dos registros sem que seja necessário alterar a opção de visualização da tela.</li>
+<li>Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Incremento na possibilidade de expansão do grid inferior, para melhor visualização dos registros sem que seja necessário alterar a opção de visualização da tela;</li>
+<li>Melhoria visual do grid superior com inclusão do campo Status;</li>
+<li>Melhoria no campo Pendência da concessão em inclusão, com valor padrão previamente configurado no sistema.</li></ul></li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Incremento na possibilidade de expansão do grid inferior, para melhor visualização dos registros sem que seja necessário alterar a opção de visualização da tela;</li>
+<li>Melhoria visual do grid superior com inclusão do campo Status e destaque do campo Previsão.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Integração Sistêmica, ajuste na importação de vínculos para detecção de vínculos inativos no sistema, porém reativados na fonte de dados (p. ex.: em razão de reversão de aposentadoria).</li>
+<li>Em Central de Notificações, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão do recurso Mala Direta, a partir de TAGs próprias a serem automaticamente substituídas e envio individual de notificação, com os respectivos dados de cada destinatário;</li>
+<li>Ao criar-se um modelo-padrão de e-mail exclusivo para mala direta, pode-se incluir, no Assunto, o termo "[Mala Direta]", sem aspas, o qual será automaticamente removido quando da formatação e envio do e-mail;</li>
+<li>Ao criar-se um novo modelo-padrão, é possível fazê-lo como cópia de um modelo existente; para tanto, deve-se editar o modelo existente de referência e, através do menu de contexto, clicar na opção "Duplicar Modelo";</li>
+<li>Melhoria no envio de e-mail, com destaque para o nome dos destinatários no e-mail de confirmação enviado ao remetente.</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão do campo Status na listagem Progressões e Concessões Funcionais com Pendência;</li>
+<li>Inclusão, no menu de contexto, da opção Listagem, para retorno ao grid principal com o rol das listagens disponíveis.</li></ul></li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+<li>Nas telas do sistema, inclusão de recurso que permite sair de um Grid e avançar o foco para o próximo componente da tela utilizando-se as teclas de atalho "Ctrl + Tab".</li>
+</ul>
+<hr />
+<h3 id="versão-2105-03042023">Versão 2.1.0.5 (03/04/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Em Gestão de Acesso, melhorias de segurança nos processos de alteração de usuários e níveis de acesso, e restrição de visualização da senha ou alteração do e-mail remetente configurado somente ao nível Administrador.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Unidades Organizacionais, ajustes e correções necessárias.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, ajustes na verificação periódica de alterações no DL ativo realizadas por outros usuários.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Modernização visual dos grids em todas as telas do sistema, com formatação em linhas zebradas.</li>
+<li>Implementação visual para os campos "status" do sistema (Vínculos, Unidades Organizacionais, Remetentes, Listagens etc.) e atualização do design desse campo para Diplomas Legais.</li>
+<li>Correções na rotina de exportação para planilha MS Excel e na janela "Pesquisar Unidade Organizacional".</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2104-10032023">Versão 2.1.0.4 (10/03/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, remoção da exibição da data de compilação da versão e melhorias visuais.</li>
+<li>Em Configurações de Sistema, inclusão da configuração de nível de acesso para autorização da efetivação de concessões.</li>
+<li>Melhorias no recurso para visualização rápida dos registros vinculados a um Diploma Legal, através do menu de contexto, selecionando-se a opção "Visualizar", disponível na Tela Principal e outras telas do sistema.</li>
+<li>Em Meu Perfil, distribuição dos campos em abas e inclusão do campo Chave API OpenAI ChatGPT.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>No menu de contexto do painel de DLs Abertos, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Remoção das opções de dividir e reunir grupos, relativos aos DLs abertos e ocultos;</li>
+<li>Inclusão das opções "Aprovar Análise" e "Autorizar Concessão", esta última disponível apenas a usuários com nível de acesso igual ou superior ao configurado no sistema.</li></ul></li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão da opção "Autorizar Concessão", conforme nível de acesso do usuário;</li>
+<li>Melhorias na verificação periódica de alterações no DL ativo realizadas por outros usuários.</li>
+<li>Ajuste no filtro de pesquisa para não retornar docentes com RT em concessão, porém com menos de três anos de exercício, não tendo, por consequência, concluído o estágio probatório.</li></ul></li>
+<li>Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão da opção "Autorizar Concessão", conforme nível de acesso do usuário;</li>
+<li>Inclusão da opção "Visualiza" Diploma Legal no menu de contexto do grid superior;</li>
+<li>Melhorias na verificação periódica de alterações no DL ativo realizadas por outros usuários.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Favoritos, inclusão de link para a aplicação FastChatGPT, disponível se presente o arquivo FastChatGPT.dll na pasta "apps", para utilização da plataforma OpenAI ChatGPT, cuja chave API deve estar cadastrada no perfil do usuário ou como variável de ambiente do SO Windows.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Redução de 2 para 1,3 segundos no tempo de exibição da mensagem de alerta de não conectividade com o servidor.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2103-01022023">Versão 2.1.0.3 (01/02/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, remoção da exibição do endereço Internet Protocol (IP) do usuário.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>No painel de DLs Abertos, ajustes na exibição dos indicadores de links e de status de aprovação no layout Detalhes.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Diplomas Legais, aprimoramento dos filtros de seleção de DLs com melhoria de performance.</li>
+<li>Em Registro de Ocorrências Funcionais, inclusão da Auditoria de Ocorrências, que analisa a concomitância de ocorrências como licença para tratamento de saúde ou de pessoa da família, faltas não justificadas e similares, no menu de contexto.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Concessões Funcionais, aprimoramento da pesquisa da concessão vigente e cálculo do adicional percentual para a concessão de Incentivo à Qualificação, ao incluí-la no Diploma Legal.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Integração Sistêmica, na importação de licenças e afastamentos, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão de verificações de alteração no primeiro dia de licença e existência de licença com período concomitante a outra já cadastrada do mesmo tipo, reduzindo o risco de cadastros em duplicidade;</li>
+<li>Aprimoramento do processo que agora é realizado com até três etapas: Importação da listagem, Auditória de Ocorrências e Análise de Ocorrências Funcionais, que passa a ser realizada para todos os vínculos e não apenas para os que ainda possuem possibilidade de progressão.</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Correção nos somatórios informados na linha Total da listagem Progressões e Concessões Efetivadas;</li>
+<li>Substituição do filtro de Ocorrências por filtros avançados (opções de seleção) na listagem Ocorrências por Vínculo;</li>
+<li>Inclusão de dados de consolidação (totais e percentuais) na listagem Diplomas Legais Editados por Assunto.</li></ul></li>
+<li>Em Relatórios Gerais, no relatório de Progressões e Concessões Efetivadas correção do filtro de critério Vigência no Período, e inclusão de filtro opcional que permite adicionar concessões de Ambiente Organizacional.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2102-10012023">Versão 2.1.0.2 (10/01/2023)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, aprimoramento do processo de controle e gestão das conexões disponíveis e do login no sistema.</li>
+<li>Tela "Ferramentas de Banco de Dados" renomeada para "Administração de Banco de Dados".</li>
+<li>Em Administração de Banco de Dados, remoção do limite de conexões registradas com bancos de dados.</li>
+<li>Inclusão do recurso de visualização de uma das seções ocultas do painel principal de botões ao mover-se o mouse sobre o logotipo da instituição, se a configuração de rolagem do painel estiver habilitada.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>No painel de DLs Abertos, remoção do cabeçalho no layout Detalhes e inclusão da opção "Ordenar por" no menu de contexto.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Posicionamentos, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Aprimoramento das ações de pesquisa e filtragem, e inclusão de opções de visualização;</li>
+<li>Inclusão do filtro dinâmico Anotações Registradas para filtrar apenas os registros que possuem anotações.</li></ul></li>
+<li>Em Progressões e Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão do filtro dinâmico Anotações Registradas para filtrar apenas os registros que possuem anotações;</li>
+<li>Ajuste da transposição de anotações do DL para o histórico de posicionamentos ou concessões, conforme o caso.</li></ul></li>
+<li>Em Progressões Funcionais, aprimoramento das opções de análise de ocorrências no menu de contexto do grid inferior.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Base de Conhecimento, inclusão do recurso de impressão do registro consultado, com pré-visualização em formato .pdf.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, inclusão da coluna DL na listagem Progressões e Concessões em Processamento.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+<li>Ajustes necessários ao suporte a múltiplos monitores de vídeo.</li>
+</ul>
+<hr />
+<h3 id="versão-2101-20122022">Versão 2.1.0.1 (20/12/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Alterações em diversas telas e funções para implementação do recurso de acesso multiunidade/multiorganização.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Novo recurso adicionado para geração de relatório do Diploma Legal, com o respectivo rol de concessões, através do menu de contexto, selecionando-se a opção "Relatório".</li>
+<li>Inclusão de rotina de atualização diária automática da vigência prevista para vínculos que possuem vigente ocorrência que suspende a contagem do interstício atual para a próxima progressão.</li>
+<li>Inclusão de rolagem do painel principal de botões por meio das setas esquerda (left) e direita (right) do teclado.</li>
+<li>Inclusão da ativação de seleção do painel de DLs abertos ao pressionar-se a tecla de seta baixo (down) do teclado (esse recurso inativa temporariamente a rolagem do painel principal de botões, que pode ser reativada pressionando-se a tecla Tab).</li>
+<li>Inclusão de atalhos para alternância entre layout (F4), esconder/mostrar ocultos (F6) e dividir/reunir grupos (F7).</li>
+<li>Atualização dos designs dos ícones.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Diplomas Legais, inclusão da opção "Relatório" do Diploma Legal no menu de contexto.</li>
+<li>Em Cadastro de Pessoas, inclusão de restrições adicionais a depender da unidade logada, vez que esse cadastro é compartilhado entre unidades e instituições distintas.</li>
+<li>Em Contatos (Destinatário), inclusão da possibilidade de restrição de um Grupo/Marcador somente à unidade criadora.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão da verificação, a cada um minuto, de alterações recentes no estado do DL aberto realizadas por outro usuário.</li>
+<li>Inclusão de filtragem na seleção dos assinantes possíveis para o tipo do DL aberto, conforme previamente configurado em Instituições e Autoridades.</li></ul></li>
+<li>Tela "Consultas e Posicionamentos" renomeada para "Posicionamentos".</li>
+<li>Em Análise de Ocorrências Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes na rotina do processamento da análise de ocorrências;</li>
+<li>Inclusão de rotina de verificação das progressões em processamento durante a análise em lote;</li>
+<li>Inclusão, no menu de contexto, de opção para emissão do relatório "Dossiê do Vínculo";</li>
+<li>Inclusão, no menu de contexto, de opções para editar ou excluir registro da tela de análise;</li>
+<li>Inclusão do novo relatório "Análise de Ocorrências Funcionais".</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Base de Conhecimento, inclusão da possibilidade de restrição de um registro somente à unidade criadora.</li>
+<li>Tela "Sincronizações Cadastrais" renomeada para "Integração Sistêmica".</li>
+<li>Tela "Notificações Eletrônicas" renomeada para "Central de Notificações".</li>
+<li>Em Favoritos, inclusão da possibilidade de restrição de um favorito somente à unidade criadora.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Tela "Relatórios Impressos" renomeada para "Relatórios Gerais".</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+<li>Atualizações das referências às telas renomeadas.</li>
+<li>Atualizações para operacionalização do recurso de acesso multiunidade/multiorganização.</li>
+</ul>
+<hr />
+<h3 id="versão-2007-11112022">Versão 2.0.0.7 (11/11/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Inclusão da possibilidade de memorização de mais de um usuário na tela de login.</li>
+<li>Em Ferramentas do Banco de Dados, melhorias no processo de geração de backup, com a inclusão de chaves estrangeiras de acordo com o schema do banco de dados na exportação do arquivo SQL.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Novo recurso adicionado para visualização rápida dos registros vinculados a um Diploma Legal, através do menu de contexto, selecionando-se a opção "Visualização".</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Diplomas Legais, inclusão da opção "Visualização" do Diploma Legal no menu de contexto.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Consultas e Posicionamentos, inclusão da opção "Visualização" do Diploma Legal no menu de contexto do grid inferior.</li>
+<li>Em Análise de Ocorrências Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Melhorias com novas opções no menu de contexto da análise em lote, para remoção ou reanálise de vínculos;</li>
+<li>Ajustes para prevenção de travamentos e bugs.</li></ul></li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Disponibilização da emissão do relatório Dossiê do Vínculo nas principais telas do sistema, através do menu de contexto.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2006-26102022">Versão 2.0.0.6 (26/10/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Modernização e melhorias visuais na tela de login.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Análise de Ocorrências Funcionais, ajustes para melhor tratamento de enquadramento e decisão administrativa e melhorias para prevenção de travamentos na análise.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Sincronizações Cadastrais, em Licenças, após a gravação das novas ocorrências importadas, inclusão de diálogo com opção para reprocessar a análise em lote para os vínculos que ainda não atingiram o topo da carreira.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2005-01092022">Versão 2.0.0.5 (01/09/2022)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>No painel de DLs Abertos, exibição de DLs ainda sem registro vinculado.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, correção na rotina de análise Progressão (API SIAPE) do grid inferior.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Sincronizações Cadastrais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>No painel de título, inclusão de botão para execução de aplicação externa, eventualmente existente para otimizar o processo de integração ou sincronização cadastral com outros sistemas;</li>
+<li>Em Licenças, inclusão da opção Analisar Ocorrências no menu de contexto e de funcionalidade para reprocessar a análise após a gravação das novas ocorrências importadas.</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, inclusão da coluna Data 24 Meses na listagem Licenças para Tratamento de Saúde (Controle), que informa a data em que o vínculo atingiu o limite de 24 meses estabelecido pela Lei 8.112/90.</li>
+<li>Em Relatórios Impressos, correção das informações do relatório Progressões e Concessões Efetivadas.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+<li>Pastas passar a ter letras minúsculas no diretório de instalação do sistema.</li>
+</ul>
+<hr />
+<h3 id="versão-2004-03082022">Versão 2.0.0.4 (03/08/2022)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão, no painel de DLs Abertos, da possibilidade de ordenação dos DLs, ascendente ou descendente, quando o layout em exibição for "Detalhes", através de clique no cabeçalho da respectiva coluna.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Consultas e Posicionamentos, no painel de atributos do posicionamento, inclusão do atributo Decisão Administrativa.</li>
+<li>Em Análise de Ocorrências Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes na rotina de verificação de inabilitações em avaliação de desempenho quando do processamento realizado a partir de ocorrências cadastradas no sistema;</li>
+<li>Inclusão de opção de configuração para contagem cumulativa ou não de ocorrências com inabilitações em avaliação de desempenho justapostas;</li>
+<li>Ajustes para o tratamento do atributo Decisão Administrativa no processamento da análise.</li></ul></li>
+<li>Em Progressões Funcionais, inclusão de funcionalidades para o tratamento do atributo Decisão Administrativa, para algumas progressões cuja vigência informada diverge da vigência prevista, e opção de alteração do atributo em Alterar Posicionamento.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Sincronizações Cadastrais, melhoria da funcionalidade de importação de vínculos, para importação daqueles devidamente posicionados na carreira, porém com situação funcional "excedente a lotação".</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Relatórios Impressos, inclusão de configurações adicionais: (a) descaracterização de dados pessoais, tais como matrícula, CPF e e-mail; e (b) visualização em fluxo contínuo, que gera a pré-visualização do relatório em página única.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2003-22072022">Versão 2.0.0.3 (22/07/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, inclusão de mensagem de Caps Lock ativado, para equipamentos que não possuem LED indicador.</li>
+<li>Inclusão de ícone com recursos úteis na barra de tarefas do sistema operacional MS Windows.</li>
+<li>Em Preferências do Usuários, inclusão de configuração que permite definir o layout de exibição dos DLs Abertos ao iniciar.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão, no menu de contexto, de seleção entre as opções "Ícones" e "Detalhes" para o layout de exibição dos DLs Abertos.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Concessões Funcionais, inclusão da funcionalidade de inserção de registro histórico de concessões não vinculadas a um DL.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, inclusão da funcionalidade de importação de relatório como anexo do e-mail (será aberta a tela de Relatórios Impressos para configuração e geração do relatório, e, ao fechar a visualização do relatório e retornar à tela de Notificações, este será incluído na lista de anexos).</li>
+<li>Em Sincronizações Cadastrais, melhoria da funcionalidade de importação de licenças e afastamentos.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão de funcionalidade de consulta de vínculo, ocorrências, posicionamentos e concessões do vínculo;</li>
+<li>Inclusão de funcionalidade de análise de ocorrências funcionais, no menu de contexto, para alguns tipos de listagem;</li>
+<li>Nova Listagem adicionada relativa ao controle de licenças para tratamento de saúde, para verificação da proximidade do limite estabelecido pela Lei 8.112/90.</li></ul></li>
+<li>Inclusão de novo relatório do tipo Relatórios Impressos, para a geração de relatórios predefinidos em formato PDF, com os seguintes tipos de relatórios: Posicionamento Atual e Previsão de Progressão; Progressões e Concessões com Pendências;<br />
+Progressões e Concessões Efetivadas; e Dossiê do Vínculo.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2002-01072022">Versão 2.0.0.2 (01/07/2022)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Melhoria de desempenho na rolagem do painel principal de botões por meio do mouse.</li>
+<li>Inclusão de teclas de atalho para Minhas Anotações (F2) e Atualizar Área de Trabalho (F5).</li>
+<li>Reativação da funcionalidade de maximização da tela.</li>
+<li>Inclusão de indicação visual nas pastas dos DLs cujas análises estejam todas aprovadas, conforme preferências do usuário.</li>
+</ul>
+<p>[SISTEMA]</p>
+<ul>
+<li>Em Ferramentas do Banco de Dados, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão de botão para geração de arquivo SQL com a estrutura do banco de dados;</li>
+<li>Inclusão de recurso de salvamento temporário dos registros pendentes de sincronização para posterior sincronização.</li></ul></li>
+<li>Em Preferências do Usuários, inclusão da configuração que permite exibir ou ocultar indicação visual nas pastas dos DLs cujas análises estejam todas aprovadas.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, inclusão de teclas de atalho para operações de análise (F3 e F4), filtragem (F5 e F6) e consultas diversas sobre o vínculo selecionado (F7 a F12).</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Implementação de assinatura pela tag "<USER-ASSIGN>"::000, a ser substituída pelo nome e sobrenome do usuário, e de caracteres sublinhados na quantidade especificada (ex.: <USER-ASSIGN>::045), se a fonte estiver assim formatada;</li>
+<li>Inclusão de botão para exibição de caixa de diálogo com informações sobre as tags disponíveis para utilização.</li></ul></li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+<li>Melhorias na performance de consultas de progressões, concessões e posicionamentos de vínculos especificados, bem como na tela de pesquisa de vínculo que passa a exigir ao menos 4 caracteres digitados para realizar a consulta ao banco de dados.</li>
+<li>Ampliação da disponibilidade do recurso Minhas Anotações nas principais telas do sistema, por meio de tecla de atalho (F2).</li>
+</ul>
+<hr />
+<h3 id="versão-2001-03062022">Versão 2.0.0.1 (03/06/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Evolução para nova versão, com uma nova identidade mais moderna e original, incluindo novo nome: Evolke.</li>
+<li>Alterações visuais na tela de login, como consequência da nova identidade do sistema.</li>
+<li>Em Meu Perfil, inclusão de campo para cadastro da Chave API do Portal Transparência do Governo Federal.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Alterações visuais e funcionais significativas sobre em relação à lista de Diplomas Legais abertos e à tela em geral.</li>
+<li>Desativação da funcionalidade de maximização da tela devido a restrições de compatibilidade visual com diferentes estilos nas versões do sistema operacional MS Windows.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Pessoas, inclusão de função que emite um alerta caso o CPF informado seja inválido.</li>
+<li>Em Cadastro de Vínculos, inclusão de função de consulta ao posicionamento SIAPE e exercício de função comissionada, conforme última atualização constante do Portal da Transparência do Governo Federal.</li>
+<li>Implementação de novo tipo de cadastro: Cadastro de Instituições Externas;</li>
+<li>Em Cadastro de Diplomas Legais, implementação de campo que permite vinculação de um DL a uma instituição externa.</li>
+<li>Em Cadastro de Remetentes, devido a restrições de autenticação SMTP por alguns provedores ou contas de e-mail, inclusão de campo Alias, isto é, um e-mail que será utilizado como máscara e que será aquele visível ao destinatário.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Consultas e Posicionamentos, Análise de Ocorrências Funcionais e em Concessões Funcionais, inclusão de função de consulta ao posicionamento SIAPE e exercício de função comissionada, conforme última atualização constante do Portal da Transparência do Governo Federal.</li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão de função de consulta ao posicionamento SIAPE e exercício de função comissionada, e, também, função de análise da progressão atual registrada no sistema e o posicionamento SIAPE, conforme última atualização constante do Portal da Transparência do Governo Federal;</li>
+<li>Inclusão, no grid principal, da opção de selecionar vínculos/progressões que já não estejam em processamento.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes na inclusão de vínculo como destinatário de maneira a possibilizar a seleção de vários vínculos a serem incluídos como destinatários simultaneamente.</li>
+<li>Ajustes para utilização de alias, isto é, e-mail informado como máscara que será visível ao destinatário.</li></ul></li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, inclusão da possibilidade de envio de notificação eletrônica para aniversariantes, docentes sem titulação necessária para progredir e servidores em débito (concessões e progressões pendentes).</li>
+<li>No Dashboard, inclusão do filtro Tipo, que permite a distinção de tipos de progressões de uma mesma carreira.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10024-05042022">Versão 1.0.0.24 (05/04/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, inclusão de verificação da senha, que deve ser alterada a cada dois anos.</li>
+<li>Em Meu Perfil, inclusão de restrições e orientações para a definição de senha pelo usuário, para maior segurança.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão de teclas de atalho para os principais recursos, com Shift + letra. Por exemplo, Shift + D acessa o Cadastro de Diplomas Legais; Shift + P acessa a tela de Planejamento e Controle de Progressões Funcionais etc.</li>
+<li>Nova forma de acesso ao menu do sistema como menu suspenso por meio do clique com o botão direito do mouse sobre a área imediatamente abaixo da barra de títulos do sistema.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Consultas e Posicionamentos, inclusão de opção de exclusão de posicionamento histórico, para usuários com perfil de gestor júnior ou superior.</li>
+<li>Em Progressões e Concessões Funcionais, inclusão de botão para acesso ao URL do DL em visualização, se disponível.</li>
+<li>Em Concessões Funcionais, inclusão de procedimento que verifica e, se necessário, atualiza a previsão de Aceleração da Promoção quando da concessão de Retribuição por Titulação a docentes ainda em período de estágio probatório.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, assuntos agora apresentados em ordem alfabética.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+<li>Expressão "estimativa" relacionada a vigência de progressões futuras a realizar alteradas para "previsão".</li>
+</ul>
+<hr />
+<h3 id="versão-10023-31012022">Versão 1.0.0.23 (31/01/2022)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, ajuste da funcionalidade de verificação de atualização obrigatória pendente, para os casos em que um usuário esteja utilizando uma versão antiga e exista versão posterior obrigatória.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajustes para possibilitar análise de ocorrências em lote, com os vínculos selecionados;</li>
+<li>Inclusão das opções "Selecionar Tudo" e "Analisar Ocorrências" no grid inferior, com os registros incluídos na minuta de DL.</li></ul></li>
+<li>Em Análise de Ocorrências Funcionais, diversos ajustes para possibilitar análise de ocorrências em lote, de maneira que a partir de agora, existem dois modos de análise possíveis (Individual e Em Lote), podendo haver alternância entre ambos; cada modo utiliza um arquivo .CSV distinto a ser importado.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Base de Conhecimento, inclusão de menu de contexto para o botão Pesquisar, através do clique com o botão direito do mouse, com as opções "Pesquisar em Tudo" e "Abrir toda a Base".</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10022-29122021">Versão 1.0.0.22 (29/12/2021)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão de funcionalidade de rolagem das seções de botões, com o uso do mouse, disponível por padrão caso não esteja desabilitada em Preferências do Usuário.</li>
+</ul>
+<p>[SISTEMA]</p>
+<ul>
+<li>Em Preferências do Usuários, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão da configuração que permite exibir ou ocultar mensagens de exceções e erros do sistema - por padrão, a exibição de mensagens é ocultada, apenas gerando o respectivo log;</li>
+<li>Inclusão da configuração que habilita ou desabilita a rolagem das seções de botões na Tela Principal.</li></ul></li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Vínculos, inclusão de máscara para restrição de acesso a informações pessoais de matrícula SIAPE e e-mail, para usuários com perfil de acesso Convidado ou equivalente.</li>
+<li>Em Cadastro de Diplomas Legais, inclusão da funcionalidade Edição Rápida em Lote, para rápida alteração dos números e URLs de vários DLs, através do clique com o botão direito do mouse.</li>
+<li>Em Instituições e Autoridades, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Implementação da opção de cadastro de substitutos legais;</li>
+<li>Inclusão de opção de exclusão de DL, Autoridade, Cargo e Instituição, para usuários com perfil de gestor pleno ou superior.</li></ul></li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, inclusão da opção de seleção da autoridade assinante na edição de Portaria, nos casos em que houver mais de uma autoridade cadastrada, incluindo substitutos legais.</li>
+<li>Em Análise de Ocorrências Funcionais, ajuste no carregamento automático de arquivo .CSV existente para que seja perguntado ao usuário se deseja carregar o arquivo existente.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Liberação do Relatório Listagens para usuários com perfil de acesso Convidado ou equivalente; porém, com restrição à visualização de listagens específicas que, potencialmente, contenham informações pessoas.</li>
+<li>Inclusão de filtro de ocorrências selecionadas na listagem Ocorrências por Vínculo.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+<li>Em variadas telas do sistema, inclusão de máscara para restrição de acesso a informação pessoal de matrícula SIAPE, para usuários com perfil de acesso Convidado ou equivalente.</li>
+</ul>
+<hr />
+<h3 id="versão-10021-05112021">Versão 1.0.0.21 (05/11/2021)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão no botão de verificação com informações sobre status e desempenho da conexão do sistema com o servidor, do recurso de seleção do modo de teste de conexão entre ICMPIndy (com RAW Socket) e ICMPSendEcho (sem RAW Socket), esta última para dispensar a necessidade de permissão de Administrador exigida pela API do SO Windows que utiliza RAW Socket.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Contatos/Destinatários, inclusão de botão para importação de dados do contato em edição ou inserção a partir de vínculo ou unidade organizacional.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, melhoria na visualização de observações sobre ocorrências e anotações relacionadas ao vínculo selecionado e/ou ao vínculo selecionado incluído em Diploma Legal, incluindo Ambiente Organizacional de servidor TAE.</li>
+<li>Em Concessões Funcionais, inclusão da visualização de Ambiente Organizacional de servidor TAE ao manter o cursor do mouse sobre o botão para consulta a dados do vínculo selecionado (dados cadastrais, ocorrências e posicionamentos).</li>
+<li>Em Progressões e Concessões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Inclusão do botão "Abrir Nova Janela" na barra superior;</li>
+<li>Inclusão menu popup no botão "Carregar DL", por meio do clique com o botão direito do mouse, com a possibilidade de rapidamente recarregar/atualizar o DL carregado ou, então, carregar outro DL em uma nova janela, com vistas a possibilitar a edição rápida ou consulta de outro DL sem a necessidade de cancelar a edição ou fechar o DL atualmente carregado;</li>
+<li>Ao carregar um DL, sua descrição aparece na barra de títulos da janela.</li></ul></li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, implementação de funcionalidade para tratamento da tag <QRCODE-MSG> a ser substituída pelo texto "Caso seja útil, disponibilizamos QR Code em anexo para acesso ao diploma legal em dispositivo móvel.", através da opção "Adicionar por Diploma Legal", caso presente no modelo de notificação e se houver QR Codes dos DLs incluídos para envio.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, melhorias pontuais e inclusão de pesquisa por unidade de lotação na listagem Aniversariantes do Mês.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+<li>O modo de teste de conexão selecionado pelo usuário fica armazenado localmente.</li>
+</ul>
+<hr />
+<h3 id="versão-10020-14102021">Versão 1.0.0.20 (14/10/2021)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, inclusão de funcionalidade de verificação de atualização obrigatória pendente, para os casos em que uma nova atualização disponível for obrigatória para o correto funcionamento do sistema, sem a qual não será possível acessar o sistema.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Ajuste na listagem de DLs abertos para tratamento correto de DL do tipo "Retribuição por Titulação/Aceleração da Promoção".</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Diplomas Legais, inclusão do assunto "Retribuição por Titulação/Aceleração da Promoção", para vinculação da concessão de RT e da AP a um único DL.</li>
+<li>Em Cadastro de Diploma Legal, inclusão da funcionalidade de geração de QR Code a partir do link URL do DL.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, ajustes necessários ao tratamento correto de DL do tipo "Retribuição por Titulação/Aceleração da Promoção".</li>
+<li>Em Progressões Funcionais, inclusão de botão de acesso à concessões para o vínculo selecionado, através do clique com o botão direito do mouse.</li>
+<li>Em Consultas e Posicionamentos e em Concessões Funcionais, inclusão da funcionalidade de geração de QR Code a partir do link URL do DL.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, implementação da funcionalidade de inclusão automática de QR Codes dos DLs incluídos para envio, através da opção "Adicionar por Diploma Legal", nos casos em que o DL possui link URL.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens e Relatórios Gráficos, ajustes necessários ao tratamento correto de registros e DLs relacionados a "Retribuição por Titulação/Aceleração da Promoção".</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10019-03092021">Versão 1.0.0.19 (03/09/2021)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Em Preferências de Exibição do Usuários, inclusão de novas configurações de preferência:<ul>
+<li>Sensibilidade da ativação do menu lateral após o movimento do mouse sobre o menu;</li>
+<li>Configuração das seções visíveis preferenciais do usuário na Tela Principal quando a tela estiver em estado normal;</li>
+<li>Configuração da visibilidade das anotações do usuário na Tela Principal;</li>
+<li>Configuração da visibilidade da quantidade de registros - concessões ou progressões - vinculados aos DLs abertos.</li></ul></li>
+<li>Inclusão de mecanismo de verificação constante da conectividade do sistema com o servidor do banco de dados.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Tempo para ativação do menu lateral após o movimento do mouse sobre o menu, conforme preferência do usuário.</li>
+<li>Possibilidade de configuração das seções visíveis preferenciais do usuário quando a tela estiver em estado normal.</li>
+<li>Possibilidade de configuração da visibilidade das anotações do usuário (se o número de DLs abertos for superior ao limite visível quando a tela estiver em estado normal, as anotações serão ocultadas automaticamente).</li>
+<li>Inclusão de botão de verificação com informações sobre status e desempenho da conexão do sistema com o servidor.</li>
+<li>Inclusão de mecanismo automático de pesquisa dos DLs abertos a cada 10 minutos, aproximadamente, com vistas a atualizar a listagem para os usuários logados.</li>
+<li>Novas opções de formatação das anotações do usuário: ajuste de texto, tamanho da fonte e tipo de fonte.</li>
+<li>Inclusão da visibilidade da quantidade de registros - concessões ou progressões - vinculados aos DLs abertos ao passar o mouse sobre esses DLs, conforme preferências do usuário.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Vínculos, ajuste na operação de gravação do vínculo para melhor tratamento dos casos de transformação de vínculo de outro tipo para o tipo estatutário, como nos casos de servidor em exercício provisório que obteve a redistribuição tornando-se servidor efetivo do órgão. Nesses casos, não se deve cadastrar um novo vínculo, mas alterar o tipo do vínculo. Com isso, serão criados os devidos registros de posicionamentos e progressão na carreira.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Concessões Funcionais, inclusão de botão para consulta a dados do vínculo selecionado (dados cadastrais, ocorrências e posicionamentos).</li>
+<li>Em Análise de Ocorrências Funcionais, inclusão de opção de análise que, para os docentes, faz prevalecer a Promoção por Avaliação de Desempenho em lugar da Aceleração da Promoção automática com base na titulação atual, exceto se o posicionamento estiver registrado com o atributo posicionamento por titulação.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Base de Conhecimento, inclusão da opção de colar texto sem formatação, quando em inserção ou edição; inclusão da opção de formatação ajuste de texto; e correções e melhorias gerais de utilização e pesquisa.</li>
+<li>Em Notificações Eletrônicas, inclusão da opção de formatação ajuste de texto; e melhorias gerais de utilização.</li>
+<li>Inclusão da nova ferramenta Favoritos, voltada ao armazenamento, consulta e pesquisa rápida de links favoritos, similar à funcionalidade existente nos navegadores de internet.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Inclusão do botão Favoritos na barra superior de diversas telas do sistema, para acesso rápido a esse recurso.</li>
+<li>Inclusão do botão Limpar Filtros na barra superior de diversas telas do sistema, em que haja barra de pesquisa.</li>
+<li>Novas opções de formatação das anotações: ajuste de texto, tamanho da fonte e tipo de fonte.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10018-28072021">Versão 1.0.0.18 (28/07/2021)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Adição de opções de configurações para a realização de backup do banco de dados em arquivos SQL.</li>
+<li>Em Preferências de Exibição do Usuários, inclusão de novas configurações de preferência:<ul>
+<li>Estado inicial da tela principal - normal ou maximizada - e, se em estado normal, ajuste de posicionamento no monitor;</li>
+<li>Opção do menu principal - recolhido ou expandido - para cada estado da tela principal - normal ou maximizada.</li></ul></li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Consultas e Posicionamentos, inclusão de painel com informações sobre os atributos enquadramento e posicionamento por titulação do posicionamento histórico; e inclusão de botões para as telas Listagens, Gráficos e Base de Conhecimento.</li>
+<li>Em Progressões e Concessões Funcionais, substituição do botão para a tela Estruturas de Carreiras pelo botão para a tela Base de Conhecimento.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, inclusão da formatação de texto para escolha da fonte (via de regra, a fonte padrão é Tahoma); e botão para a tela Base de Conhecimento.</li>
+<li>Inclusão da nova ferramenta Base de Conhecimento, voltada ao armazenamento, consulta e pesquisa de orientações, decisões e normativas internas e externas, por assunto e/ou termos de pesquisa (para pesquisa com vários termos, utilizar "&amp;&amp;", sem aspas, entre os termos a pesquisar).</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10017-05072021">Versão 1.0.0.17 (05/07/2021)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Na tela de login, realizadas as seguintes alterações ou melhorias:<ul>
+<li>Ajustes para alternância entre os controles (botões e campos) da tela por meio da tecla TAB;</li>
+<li>Implementação das setas direcionais esquerda e direita para seleção do banco de dados;</li>
+<li>Implementação das teclas de atalho para o acesso como convidado (Alt+A) ou à tela de recuperação de senha (Alt+E).</li></ul></li>
+<li>Implementação da desabilitação temporária do som de beep do SO Windows durante a execução do sistema.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Cadastro de Vínculos, ajuste do início da Progressão por Capacitação de TAE para 01/03/2005 quando do cadastro de um servidor TAE que entrou em exercício antes dessa data, haja vista tal tipo de progressão ter sido instituído somente em tal data, conforme Lei nº 11.091/2005.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, inclusão da possibilidade de inserção, no corpo do e-mail, de listagem de vínculos com matrícula e nome, por meio da expressão-chave "<MAT-VINCULO> - <NOME-VINCULO> - <TIT-VINCULO> - <NUMPROC>", o que permite a criação de um modelo de e-mail para informação acerca de um rol de vínculos selecionados.</li>
+<li>Em Notificações Eletrônicas, inclusão da funcionalidade de maximizar/restaurar a tela.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>No Dashboard, inclusão do filtro Ano de Referência, que permite consulta aos indicadores relativos ao ano anterior e comparação com o ano corrente; especialmente útil quando o último processamento de concessões e progressões de um ano ocorrer no início do ano seguinte.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10016-11062021">Versão 1.0.0.16 (11/06/2021)</h3>
+<p>[SISTEMA]</p>
+<ul>
+<li>Em Preferências de Exibição do Usuário, inclusão da opção de exportação para planilha OpenOffice (BR Office ou Libre Office) em alternativa ao MS Excel, para as situações em que o MS Excel esteja indisponível ou com limitações de uso em função de cópia não registrada ou com licença expirada. Atenção: para importações de arquivos .xls ou .csv, o sistema continua utilizando do pacote Office definido pelo usuário como padrão nas configurações do SO Windows.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Correção do efeito de dois cliques simples quando do duplo-clique sobre um DL.</li>
+<li>Ajustes na rotina de exibição do menu lateral para compatibilidade com o SO Windows 7.</li>
+<li>Remoção do menu popup da listagem de DLs abertos, anteriormente acessado pelo clique com o botão direito do mouse.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>No Dashboard, inclusão de botão de acesso a listagens e relatórios gráficos.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Ajustes na rotina de exportação para planilhas eletrônicas nas telas onde houver para exportação para planilha OpenOffice, se escolhido pelo usuário.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10015-01062021">Versão 1.0.0.15 (01/06/2021)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Reestilização da tela principal com visual moderno e limpo, menu lateral dinâmico - tecla de atalho Alt+M, se necessário - e opção de maximização.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Inclusão de opção alternativa para ocorrência Afastamento para Mandato Eletivo para Vereador, quando houver compatibilidade de horário, hipótese que não interrompe interstício para progressão/promoção.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Análise de Ocorrências Funcionais, ajustes para tratamento adequado do Afastamento para Mandato Eletivo para Vereador, quando houver compatibilidade de horário.</li>
+<li>Em Progressões Funcionais, realizadas as seguintes alterações ou melhorias:<ul>
+<li>Ajustes na "Aceleração da Promoção", de modo a estimar a vigência da próxima progressão com base na titulação;</li>
+<li>Inclusão de opção para marcação de progressão pendente, similar à existente para concessões funcionais.</li></ul></li>
+<li>Em Progressões Funcionais, ajuste na efetivação da RSC para atualização da titulação do vínculo com base na RSC concedida.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Alteração da listagem Concessões Funcionais Pendentes para Progressões e Concessões Funcionais Pendentes, de modo a apresentar progressões marcadas com pendência.</li>
+<li>No Dashboard, inclusão de novos indicadores de gestão de carreiras: Tempo Médio de Pendências em Promoções e Progressões (TMPP) e Taxa de Promoções e Progressões Concedidas (TxPC).</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10014-11052021">Versão 1.0.0.14 (11/05/2021)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão de botão de acesso ao relatório Dashboard na barra de menus.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Em Diplomas Legais, inclusão da possibilidade de anotações para o DL.</li>
+<li>Em Remetentes, inclusão da possibilidade de exclusão de remetente.</li>
+<li>Inclusão do cadastro de Contatos/Destinatários com funcionalidade de atribuição de grupo/marcador.</li>
+<li>Bloqueio do acesso ao cadastro de Ocorrências Funcionais para usuário Convidado, em função da LGPD.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Consultas e Posicionamentos, inclusão dos atributos de "enquadramento" e/ou "posicionamento por titulação" para um posicionamento cadastrado. Ambos são objeto de análise na Análise de Ocorrências Funcionais. Ao contrário do posicionamento por titulação, o enquadramento não altera a estimativa de vigência da próxima progressão.</li>
+<li>Em Progressões Funcionais, ao se efetivar progressões com DL relativo a "Aceleração da Promoção", o atributo "posicionamento por titulação" é marcado no histórico para essas progressões.</li>
+<li>Em Análise de Ocorrências Funcionais, realizadas as seguintes alterações ou melhorias:<ul>
+<li>Bloqueio da análise para usuário Convidado, em função da LGPD;</li>
+<li>A análise passa a tratar os históricos de "enquadramento" e/ou "posicionamento por titulação";</li></ul></li>
+<li>Nas telas onde houver, a consulta à Estrutura Mínima de Carreira passa a tratar os históricos de "enquadramento" e/ou "posicionamento por titulação".</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, inclusão da possibilidade de seleção de vários Diplomas Legais, com sua listagem no corpo do e-mail em substituição à expressão-chave "<DL-NUM/ANO> - <DL-ASSUNTO>.", o que permite a criação de um modelo de e-mail para informação acerca de um rol de DLs selecionados.</li>
+<li>Em Notificações Eletrônicas, inclusão da possibilidade de seleção de contatos cadastrados individualmente ou por grupo/marcador.</li>
+<li>Em Sincronizações Cadastrais, melhoria na sincronização de vínculos para verificação em conjunto de alterações de e-mail e lotação, se a opção for marcada pelo usuário.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Inclusão de novo relatório do tipo Dashboard (utilize as opções de maximizar e restaurar janela para melhor visualização).</li>
+<li>Nova Listagem adicionada relativa às concessões pendentes para melhor controle da entrega de diplomas ou outras pendências.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Inclusão de configuração que habilita a visualização de efeitos financeiros quando este recurso estiver desabilitado no sistema.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10013-18032021">Versão 1.0.0.13 (18/03/2021)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão dos botões de atalho Atualizar Listagem e Ocultar/Exibir Anotações.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Ajustes e melhorias no cadastro de Unidades Organizacionais, com inclusão dos campos e-mail, telefone e dirigente.</li>
+<li>Em Diplomas Legais, inclusão da possibilidade de exclusão de DL sem vinculações, para usuários com perfil de administrador.</li>
+<li>Ajustes no cadastro de Instituições e Autoridades.</li>
+<li>Em Ocorrências Funcionais, inclusão da possibilidade de exclusão de ocorrência, para usuários com perfil de administrador.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões Funcionais, Concessões Funcionais e Consultas e Posicionamentos, melhoria no filtro de pesquisa por unidades organizacionais, de modo a permitir a filtragem incluindo subunidades das unidades selecionadas.</li>
+<li>Em Progressões e Concessões Funcionais, inclusão:<ul>
+<li>da opção de Consultar Diploma Legal, se existente;</li>
+<li>de campo para inclusão dos efeitos financeiros;</li>
+<li>de mecanismo de verificação de progressões ou concessões em processamento, para evitar duplicidade; e,</li>
+<li>de botões de consulta às telas relatórios em listagens, relatórios gráficos e estruturas de carreiras.</li></ul></li>
+<li>Em Progressões Funcionais, ajuste na pesquisa de docentes com filtro de titulação requerida habilitado, para incluir aqueles com concessão de nova RT, com DL aberto, cuja nova titulação atenda à titulação requerida.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Sincronizações Cadastrais, ajuste na rotina de geração de lista de e-mails com a inclusão da funcionalidade de marcação ou desmarcação de e-mail a ser exportado para arquivo de texto (.doc).</li>
+<li>Em Notificações Eletrônicas, inclusão de: opção de seleção de vínculos por Unidades Organizacionais de lotação; opção de seleção dos contatos de dirigentes e secretarias de Unidades Organizacionais; contador de destinatários selecionados; e identificação do tipo de designação do vínculo (técnico ou docente).</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Ajuste na listagem Unidades Organizacionais e Quantitativos para a correta agregação dos quantitativos de vínculos lotados nas unidades hierarquicamente inferiores a cada unidade, organizado pelo identificador.</li>
+<li>Nova Listagem adicionada relativa às Progressões e Concessões em processamento, considerando os DLs abertos.</li>
+<li>Em Relatórios Gráficos, inclusão da possibilidade de seleção do exercício (ano) para alguns gráficos em que o exercício de análise estava restrito ao exercício corrente. Os gráficos relativos a exercícios anteriores serão tão precisos quanto estiverem completos os cadastrados de vínculos e concessões funcionais.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Na tela Pesquisar Unidade Organizacional, inclusão de checkbox para seleção de unidades hierarquicamente inferiores.</li>
+<li>Em Informações, inclusão da funcionalidade de impressão do histórico de versões do sistema para arquivo de texto (.txt).</li>
+<li>Inclusão da opção de habilitação/desabilitação, para todo o sistema, do recurso opcional de distinção entre vigência e efeitos financeiros, prevalecendo sobre as preferências de usuários eventualmente configuradas.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10012-03022021">Versão 1.0.0.12 (03/02/2021)</h3>
+<p>[CADASTRO]</p>
+<ul>
+<li>No Cadastro de Diplomas Legais, inclusão do campo DL Oculto, que permite cadastrar DLs com previsão de publicação futura e oculta-los na tela principal - recurso ideal para a preparação de progressões e concessões que ainda estejam aguardando o interstício. DLs ocultos são destacados na cor cinza.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, inclusão da funcionalidade Alterar DL Vinculado, o que permite movimentar progressões ou concessões entre DLs distintos, desde que ambos estejam abertos.</li>
+<li>Em Progressões Funcionais, ajustes na pesquisa de ocorrências do vínculo após o clique no vínculo para mostrar mais de uma ocorrência, se houver.</li>
+<li>Em Análise de Ocorrências Funcionais, ajustes na rotina de cálculo de vigências para a correta análise de ocorrências relativas a mandato eletivo, conforme previsto no art. 38 da CF/88.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Sincronizações Cadastrais, ajustes na rotina de importação de licenças para inclusão da importação de ocorrências relativas a mandato eletivo.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Ajuste na listagem Cargos e Quantitativos para que se quantifique apenas os vínculos ativos.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Nas tela Pesquisar DL, DLs ocultos são destacados na cor cinza.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-10011-12012021">Versão 1.0.0.11 (12/01/2021)</h3>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Progressões e Concessões Funcionais, inclusão da funcionalidade de consulta de vínculos, ocorrências e posicionamentos para os vínculos incluídos no DL (Grids inferiores).</li>
+<li>Em Progressões Funcionais, melhorias nos filtros de pesquisa para possibilitar o tratamento de vínculos inativos; e ajuste na rotina de concessão de aceleração da promoção, para se verificar se há concessão de nova RT, com DL aberto, que implique em posicionamento distinto ao previsto.</li>
+<li>Em Análise de Ocorrências Funcionais, ajustes na rotina de cálculo de vigências para prevenção de erros e diferenciação da previsão de aceleração da promoção entre as carreiras de Magistério Superior e EBTT; e ajuste na contagem de meses de inabilitação em avaliação de desempenho, de modo a permitir flexibilidade, conforme cadastrado na ocorrência.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, ajustes na rotina de envio de e-mail, para melhor tratamento de situações de falhas de envio e envio de grande número de destinatários (centenas ou milhares).</li>
+<li>Em Sincronizações Cadastrais, inclusão da função de Notificação Eletrônica na importação de e-mails, opção "Gerar Lista".</li>
+<li>Em Sincronizações Cadastrais, ajustes na rotina de importação do arquivo .xls para importação do relatório de escolaridade.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Nova Listagem adicionada relativa aos totais de Progressões e Concessões realizadas, com filtro por ano.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Inclusão da possibilidade de se desativar temporariamente a checagem de conexão com o servidor.</li>
+</ul>
+<hr />
+<h3 id="versão-10010-11122020">Versão 1.0.0.10 (11/12/2020)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Inclusão de botão para acesso à tela de Concessões Funcionais, se disponível.</li>
+<li>Melhorias de estabilidade e prevenção de erros na pesquisa automática de DLs abertos.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Inclusão de dois novos assuntos de Diplomas Legais: Ambiente Organizacional e RSC.</li>
+<li>Ajustes na exportação da estrutura de Unidades Organizacionais para imagem bitmap (.bmp).</li>
+<li>Em Instituições, inclusão do cadastro de cabeçalho (formato .png) para Edição de Portaria (MS Word).</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Inclusão das funcionalidades de anotações e controle de status da análise das progressões incluídas no DL (Grid inferior).</li>
+<li>Inclusão da funcionalidade e respectiva tela de Concessões Funcionais, para controle e preparação de portarias de concessões de IQ, RT e RSC, e de atribuição de Ambiente Organizacional.</li>
+<li>Inclusão das rotinas para Edição de Portaria (MS Word) relacionadas às Concessões Funcionais.</li>
+<li>Alterações da estrutura de dados do campo NOTAS/ANOTAÇÕES para permitir formatação de texto e o armazenamento dessa formatação no banco de dados.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, ajustes para listagem dos contatos de portarias relativas a Concessões Funcionais, quando importadas.</li>
+<li>Em Sincronizações Cadastrais, melhoria na inclusão de novo Vínculo para importação automática da unidade de lotação a partir do arquivo importado (.xlsx), em conformidade com as correlações de unidades já cadastradas.</li>
+<li>Em Sincronizações Cadastrais, melhoria na sincronização de Vínculo, para verificar e atualizar nomes dos servidores, quando houver alteração.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Nova Listagem adicionada relativa às Concessões Funcionais (IQ, RT, RSC e Ambiente Organizacional).</li>
+<li>Ajustes na listagem "Diplomas Legais Editados por Assunto" para contagem dos DLs de Concessões Funcionais.</li>
+<li>Novo Relatório Gráfico adicionado relativa às Concessões Funcionais efetivadas no ano.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Nas telas de pesquisa de Diplomas Legais, inclusão de filtro por período de tempo.</li>
+<li>Registro da data do último login e versão instalada do CCDPSYS no computador do usuário, de forma a permitir ao administrador do sistema melhor gestão e apoio aos usuários.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-1009-17112020">Versão 1.0.0.9 (17/11/2020)</h3>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>Melhoria visual na Tela Principal.</li>
+<li>Nova funcionalidade Anotações do Usuário na Tela Principal.</li>
+</ul>
+<p>[CADASTRO]</p>
+<ul>
+<li>Inclusão dos Ambientes Organizacionais.</li>
+<li>Exportação da estrutura de Unidades Organizacionais para imagem bitmap (.bmp).</li>
+<li>Inclusão das Unidades Organizacionais no Cadastro de Vínculos.</li>
+<li>Inclusão dos Ambientes Organizacionais e das Unidades Organizacionais na tela Consultas e Posicionamentos.</li>
+<li>Possibilidade de filtragem dos registros por Ambientes ou Unidades Organizacionais na tela Consultas e Posicionamentos.</li>
+<li>Inclusão da sincronização de ocorrências de Afastamentos do SIGEPE (importação de arquivo .xls).</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Aprimoramento do cabeçalho da tabela na Edição de Portaria (MS Word) na Tela Progressões Funcionais, de modo a mostrar o termo "Posicionamentos" em duas células mescladas acima de "Anterior" e "Atual".</li>
+<li>Possibilidade de filtragem dos registros por Ambientes ou Unidades Organizacionais na tela Progressões Funcionais.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Em Notificações Eletrônicas, inclusão da possibilidade de salvamento de links conjuntamente com o texto padrão.</li>
+<li>Em Sincronizações Cadastrais, inclusão da sincronização de unidades de lotação, com funcionalidade de correspondências entre as unidades importadas e as Unidades Organizacionais do sistema.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Novas Listagens adicionadas relativas aos Ambientes Organizacionais e Unidades Organizacionais.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Exportação de dados para MS Excel com formatação aprimorada e pré-configuração de impressão, com cabeçalho e rodapé.</li>
+<li>Melhorias pontuais diversas de estabilidade e prevenção de bugs.</li>
+</ul>
+            </main>
+          </body>
+        </html>
