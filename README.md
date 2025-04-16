@@ -11,7 +11,32 @@ Pré-requisitos (primeira instalação):
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.3.0.0 (Atual)
+### Versão 2.3.1.0 (Atual)
+
+[CADASTRO]
+
+- Em Cadastro de Carreiras e Cargos, inclusão dos campos "Nível Cargo" e "Descrição" para os itens de concessão.
+
+[CARREIRAS]
+
+- Em Progressões Funcionais, correções nas opções "Incluir Selecionados" e "Incluir Todos" no menu de contexto do grid superior.
+- Em Histórico de Posicionamentos, inclusão dos filtros dinâmicos "Carreiras e Regras", já existentes em Progressões Funcionais.
+
+[FERRAMENTAS]
+
+- Em Análise de Ocorrências e Projeção de Carreira, correção na rotina de projeção para o cálculo correto de interstício quando, após a transposição/enquadramento, um docente tenha direito à progreção na data de vigência da nova regra de desenvolvimento.
+
+[RELATÓRIOS]
+
+- Em Relatórios Gráficos, correção no relatório "Progressões Vigentes, Pendentes e Previstas".
+
+[OUTROS]
+
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.3.0.0 (13/03/2025)
 
 [CADASTRO]
 
