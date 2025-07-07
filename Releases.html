@@ -333,12 +333,55 @@ code.hljs {
 <p>O Evolke é um software desenvolvido para a <strong>gestão da carreiras</strong> de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.</p>
 <p>Pré-requisitos (primeira instalação):</p>
 <ul>
-<li><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe">Visual C++ Redistributable</a></li>
-<li><a href="https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.3.0-winx64.msi">Conector ODBC MySQL 8.3</a></li>
+<li><a href="https://aka.ms/vs/17/release/vc_redist.x64.exe">Visual C++ Redistributable</a></li>
+<li><a href="https://dev.mysql.com/get/Downloads/Connector-ODBC/9.3/mysql-connector-odbc-9.3.0-winx64.msi">Conector ODBC MySQL 9.3</a></li>
 </ul>
 <hr />
 <p>O que há de novo? Confirma as notas de versão:</p>
-<h3 id="versão-2310-atual">Versão 2.3.1.0 (Atual)</h3>
+<h3 id="versão-2320-atual">Versão 2.3.2.0 (Atual)</h3>
+<p>Versão 2.3.2.0 (Atual)</p>
+<p>[SISTEMA]</p>
+<ul>
+<li>Distribuição do novo driver "MySQL Connector ODBC 9.3 (64-bit)" e da versão 14.42.34433.0 do "Pacote Redistribuível do Microsoft Visual C++ x64", com ajustes de compatibillidade necessários.</li>
+<li>Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a projeção simulada de interstícios como, por exemplo, projeção quinquenal (interstícios de cinco anos de efetivo exercício).</li>
+<li>Implementações, na projeção de carreiras, de acelerações por titulação/capacitação/qualificação que conferem um ou mais níveis após integralização de interstício e de cálculo e utilização de saldo de interstício anterior.</li>
+</ul>
+<p>[TELA PRINCIPAL]</p>
+<ul>
+<li>No painel de menus, remoção do recurso Desenvolvimento de Pessoas, alteração de Análise e Projeção de Carreira para o módulo Carreiras e inclusão de Estruturas de Carreiras no módulo Ferramentas.</li>
+</ul>
+<p>[CARREIRAS]</p>
+<ul>
+<li>Em Histórico de Posicionamentos, inclusão da opção "Analisar&gt; Projeção Quinquenal".</li>
+<li>Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:<ul>
+<li>Ajuste no botão Remover Posicionamento, para permitir a remoção, da lista ou DL, de mais de um vínculo simultaneamente;</li>
+<li>No menu de contexto do grid inferior, em Opções Adicionais, inclusão das opções "Operações com DL &gt; Clonar DL" e "Operações com DL &gt; Retificar DL", permitindo procedimentos de retificação ou edição a partir da cópia de um DL existente, bem como inclusão da opção "Analisar&gt; Projeção Quinquenal".</li></ul></li>
+<li>Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:<ul>
+<li>No menu de contexto da análise, inclusão do recurso "Editar &gt; Inserir", e melhorias nos recursos de edição e exclusão disponíveis, que permitem, após inserção de posicionamentos e/ou, então, inserção, edição ou exclusão de ocorrências funcionais, realizar projeções simuladas sob os efeitos das alterações;</li>
+<li>No menu de contexto da análise, inclusão da opção "Analisar&gt; Projeção Quinquenal";</li>
+<li>Ajustes para cômputo de acelerações por titulação/capacitação/qualificação que conferem um ou mais níveis após integralização de interstício;</li>
+<li>Novas Opções de Análise, de modo a permitir o destaque de previsões de progressões divergentes, progressões pendentes ou progressões previstas para determinado período;</li>
+<li>Melhorias no design visual da tela, com estilo mais limpo e moderno.</li></ul></li>
+<li>Recurso Desenvolvimento de Pessoas removido do módulo Carreiras.</li>
+</ul>
+<p>[FERRAMENTAS]</p>
+<ul>
+<li>Recurso Análise de Ocorrências e Projeção de Carreira movido para o módulo Carreiras.</li>
+<li>Recurso Estruturas de Carreiras movido do módulo Carreiras e incluído no painel de menus da tela principal.</li>
+</ul>
+<p>[RELATÓRIOS]</p>
+<ul>
+<li>Em Listagens, ajuste na listagem Servidores sem Titulação Necessária para Progredir, com inclusão do código do cargo.</li>
+<li>Em Relatórios Gráficos, correção do relatório Concessões Efetivadas por Mês no Ano.</li>
+<li>Em Relatórios Gerais, melhor adequação das nomenclaturas padrão dos arquivos a serem salvos/exportados.</li>
+</ul>
+<p>[OUTROS]</p>
+<ul>
+<li>Em diversas telas do sistema, configuração de teclas de atalho (como, por exemplo, F3, Alt+F3, F7, F8, F9, F10 e F11) para acesso mais eficiente a telas e recursos do sistema.</li>
+<li>Melhorias pontuais de estabilidade e prevenção de bugs.</li>
+</ul>
+<hr />
+<h3 id="versão-2310-16042025">Versão 2.3.1.0 (16/04/2025)</h3>
 <p>[CADASTRO]</p>
 <ul>
 <li>Em Cadastro de Carreiras e Cargos, inclusão dos campos "Nível Cargo" e "Descrição" para os itens de concessão.</li>

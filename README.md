@@ -4,14 +4,60 @@ O Evolke é um software desenvolvido para a **gestão da carreiras** de servidor
 
 Pré-requisitos (primeira instalação):
 
-- [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x86.exe)
-- [Conector ODBC MySQL 8.3](https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.3.0-winx64.msi)
+- [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+- [Conector ODBC MySQL 9.3](https://dev.mysql.com/get/Downloads/Connector-ODBC/9.3/mysql-connector-odbc-9.3.0-winx64.msi)
 
 ---
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.3.1.0 (Atual)
+### Versão 2.3.2.0 (Atual)
+
+Versão 2.3.2.0 (Atual)
+
+[SISTEMA]
+
+- Distribuição do novo driver "MySQL Connector ODBC 9.3 (64-bit)" e da versão 14.42.34433.0 do "Pacote Redistribuível do Microsoft Visual C++ x64", com ajustes de compatibillidade necessários.
+- Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a projeção simulada de interstícios como, por exemplo, projeção quinquenal (interstícios de cinco anos de efetivo exercício).
+- Implementações, na projeção de carreiras, de acelerações por titulação/capacitação/qualificação que conferem um ou mais níveis após integralização de interstício e de cálculo e utilização de saldo de interstício anterior.
+
+[TELA PRINCIPAL]
+
+- No painel de menus, remoção do recurso Desenvolvimento de Pessoas, alteração de Análise e Projeção de Carreira para o módulo Carreiras e inclusão de Estruturas de Carreiras no módulo Ferramentas.
+
+[CARREIRAS]
+
+- Em Histórico de Posicionamentos, inclusão da opção "Analisar> Projeção Quinquenal".
+- Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Ajuste no botão Remover Posicionamento, para permitir a remoção, da lista ou DL, de mais de um vínculo simultaneamente;
+  - No menu de contexto do grid inferior, em Opções Adicionais, inclusão das opções "Operações com DL > Clonar DL" e "Operações com DL > Retificar DL", permitindo procedimentos de retificação ou edição a partir da cópia de um DL existente, bem como inclusão da opção "Analisar> Projeção Quinquenal".
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - No menu de contexto da análise, inclusão do recurso "Editar > Inserir", e melhorias nos recursos de edição e exclusão disponíveis, que permitem, após inserção de posicionamentos e/ou, então, inserção, edição ou exclusão de ocorrências funcionais, realizar projeções simuladas sob os efeitos das alterações;
+  - No menu de contexto da análise, inclusão da opção "Analisar> Projeção Quinquenal";
+  - Ajustes para cômputo de acelerações por titulação/capacitação/qualificação que conferem um ou mais níveis após integralização de interstício;
+  - Novas Opções de Análise, de modo a permitir o destaque de previsões de progressões divergentes, progressões pendentes ou progressões previstas para determinado período;
+  - Melhorias no design visual da tela, com estilo mais limpo e moderno.
+- Recurso Desenvolvimento de Pessoas removido do módulo Carreiras.
+
+[FERRAMENTAS]
+
+- Recurso Análise de Ocorrências e Projeção de Carreira movido para o módulo Carreiras.
+- Recurso Estruturas de Carreiras movido do módulo Carreiras e incluído no painel de menus da tela principal.
+
+[RELATÓRIOS]
+
+- Em Listagens, ajuste na listagem Servidores sem Titulação Necessária para Progredir, com inclusão do código do cargo.
+- Em Relatórios Gráficos, correção do relatório Concessões Efetivadas por Mês no Ano.
+- Em Relatórios Gerais, melhor adequação das nomenclaturas padrão dos arquivos a serem salvos/exportados.
+
+[OUTROS]
+
+- Em diversas telas do sistema, configuração de teclas de atalho (como, por exemplo, F3, Alt+F3, F7, F8, F9, F10 e F11) para acesso mais eficiente a telas e recursos do sistema.
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.3.1.0 (16/04/2025)
 
 [CADASTRO]
 
