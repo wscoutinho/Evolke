@@ -1,6 +1,6 @@
 ### O Evolke
 
-O Evolke é um software desenvolvido para a **gestão da carreiras** de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.
+O Evolke é um software desenvolvido para a **gestão das carreiras** de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.
 
 Pré-requisitos (primeira instalação):
 
@@ -11,13 +11,51 @@ Pré-requisitos (primeira instalação):
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.3.2.0 (Atual)
+### Versão 2.3.3.0 (05/09/2025)
 
-Versão 2.3.2.0 (Atual)
+Versão 2.3.3.0 (Atual)
+
+[TELA PRINCIPAL]
+
+- Na barra de status, no canto inferior direito, inclusão de indicador de existência de anotações do usuário (Minhas Anotações), acessível também em diversas telas do sistema, por meio de tecla de atalho (F2).
+
+[CADASTRO]
+
+- Em Cadastro de Vínculos, inclusão de verificação da adequação entra a data de exercício do vínculo e as vigências da regra de desenvolvimento e da carreira e da data de criação dos cargos selecionados.
+- Em Cadastro de Carreiras e Cargos, inclusão do campo "Data de Criação" no cadastro de cargos.
+- Em Registro de Ocorrências Funcionais, no menu de contexto do grid inferior, inclusão do recurso "Exportar > Imagem (BMP)", que copia para a área de transferência (clipboard) um print do rol de ocorrências do vínculo.
+
+[CARREIRAS]
+
+- Em Progressões e Concessões Funcionais, ajustes adicionais na função "Editar Portaria (MS Word)", de modo a permitir o trato de diferentes textos-padrão, de variadas regras e suas respectivas legislações, para cada tipo de progressão ou concessão, e para DLs de retificação.
+- Em Histórico de Posicionamentos, realizadas as seguintes inclusões e melhorias:
+  - No painel inferior direito, inclusão de bloco com informação da última ocorrência de provimento (redistribuição etc.), desligamento ou restauração (reversão, recondução etc.), se houver;
+  - Inclusão do filtro dinâmico "Tipos de Ocorrências", já existente em Progressões Funcionais;
+  - No menu de contexto do grid inferior, inclusão do recurso "Exportar > Imagem (BMP)", que copia para a área de transferência (clipboard) um print do rol de posicionamentos do vínculo.
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - Em Opções de Análise, inclusão da opção "Exibir histórico de ocorrências funcionais completo", de modo a exibir, também, outras ocorrências existentes sem impacto sobre a projeção, porém úteis à exportação do respectivo relatório;
+  - No menu de contexto da análise, inclusão do recurso "Exportar > Imagem (BMP)", que copia para a área de transferência (clipboard) um print dos registros visíveis da projeção.
+
+[FERRAMENTAS]
+
+- Em Base de Conhecimento e na Central de Notificações, no menu de contexto da área de texto, inclusão da opção "Formatar", que habilita caixa de diálogo de formatação de fonte para um texto selecionado, ampliando o leque de opções de formatação.
+
+[RELATÓRIOS]
+
+- Em Listagens, nova Listagem adicionada com a finalidade de localizar processos administrativos e diplomas legais existentes para os vínculos, ainda que tenha havido, p. ex., retificações que tenham ocultado a exibição no Histórico de Posicionamentos.
+
+[OUTROS]
+
+- Em diversas telas do sistema, nos menus de contexto em que há disponível o recurso "Consultar > Dossiê do Vínculo", inclusão de tela para seleção prévia de opções/configurações para geração do relatório Dossiê do Vínculo.
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.3.2.0 (07/07/2025)
 
 [SISTEMA]
 
-- Distribuição do novo driver "MySQL Connector ODBC 9.3 (64-bit)" e da versão 14.42.34433.0 do "Pacote Redistribuível do Microsoft Visual C++ x64", com ajustes de compatibillidade necessários.
+- Distribuição do novo driver "MySQL Connector ODBC 9.3 (64-bit)" e da versão 14.42.34433.0 do "Pacote Redistribuível do Microsoft Visual C++ x64", com ajustes de compatibilidade necessários.
 - Aprimoramento da infraestrutura de código-fonte do software para implementação de suporte a projeção simulada de interstícios como, por exemplo, projeção quinquenal (interstícios de cinco anos de efetivo exercício).
 - Implementações, na projeção de carreiras, de acelerações por titulação/capacitação/qualificação que conferem um ou mais níveis após integralização de interstício e de cálculo e utilização de saldo de interstício anterior.
 
@@ -70,7 +108,7 @@ Versão 2.3.2.0 (Atual)
 
 [FERRAMENTAS]
 
-- Em Análise de Ocorrências e Projeção de Carreira, correção na rotina de projeção para o cálculo correto de interstício quando, após a transposição/enquadramento, um docente tenha direito à progreção na data de vigência da nova regra de desenvolvimento.
+- Em Análise de Ocorrências e Projeção de Carreira, correção na rotina de projeção para o cálculo correto de interstício quando, após a transposição/enquadramento, um docente tenha direito à progressão na data de vigência da nova regra de desenvolvimento.
 
 [RELATÓRIOS]
 
@@ -185,7 +223,7 @@ Versão 2.3.2.0 (Atual)
 - Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
   - Correções pontuais no processo de construção/simulação da carreira, em razão da implementação do novo suporte a diferentes regras de desenvolvimento na carreira;
   - Inclusão, no menu de contexto da análise, do recurso "Editar > Reprocessar (Alterações)", que permite, após editadas ou excluídas ocorrências funcionais, realizar projeções simuladas sob os efeitos das alterações;
-  - Inclusão das opções de análise "Exibir projeção integral da carreira" e "Reprocessar alterações por padrão ao utilizar tecla de atalho (F5)", essa últim com vistas a facilitar a realização de projeções simuladas.
+  - Inclusão das opções de análise "Exibir projeção integral da carreira" e "Reprocessar alterações por padrão ao utilizar tecla de atalho (F5)", essa última com vistas a facilitar a realização de projeções simuladas.
 
 [RELATÓRIOS]
 
@@ -253,7 +291,7 @@ Versão 2.3.2.0 (Atual)
 
 [RELATÓRIOS]
 
-- Em Relatórios Gerais, inclusão do relatório Contatos e Dirigentes das Unidadades Organizacionais.
+- Em Relatórios Gerais, inclusão do relatório Contatos e Dirigentes das Unidades Organizacionais.
 
 [OUTROS]
 
@@ -265,12 +303,12 @@ Versão 2.3.2.0 (Atual)
 
 [SISTEMA]
 
-- Distribuição do novo driver "MySQL Connector ODBC 8.3 (64-bit)" e ajustes de compatibillidade necessários.
+- Distribuição do novo driver "MySQL Connector ODBC 8.3 (64-bit)" e ajustes de compatibilidade necessários.
 - Inclusão de novo modo de teste de conexão "DBCheck (Flag Select)" mais apurado em relação aos preexistentes e compatível com o novo driver conector MySQL ao restabelecer, via aplicação, a conexão com o banco de dados.
 
 [CADASTRO]
 
-- Em Cadatro de Diplomas Legais, inclusão dos assuntos Enquadramento/Transposição para carreiras e para concessões.
+- Em Cadastro de Diplomas Legais, inclusão dos assuntos Enquadramento/Transposição para carreiras e para concessões.
 
 [CARREIRAS]
 
@@ -293,12 +331,12 @@ Versão 2.3.2.0 (Atual)
 [CARREIRAS]
 
 - Em Histórico de Posicionamentos e Progressões Funcionais, inclusão dos itens "Outras" no filtro Categoria e "Avaliação" no filtro Carreira TAE, agora renomeado para Tipo, que permitem expandir a consulta a outras designações de carreira além de TAE e DOCENTE e outros tipos além de Mérito (M), Capacitação (C) e Único (U).
-- Em Progressões Funcionais, inclusão de filtro extra em Filtros Dinâmicos para obter todos os vínculos que podem acelerar ou progregir por titulação/capacitação, independente da existência de progressão funcional pendente.
+- Em Progressões Funcionais, inclusão de filtro extra em Filtros Dinâmicos para obter todos os vínculos que podem acelerar ou progredir por titulação/capacitação, independente da existência de progressão funcional pendente.
 
 [FERRAMENTAS]
 
 - Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
-  - Inclusão de opções de análise, agrupando opções existentes e acrescentando a opção "desconsiderar decisão administrativa", o que permite realizar projeções outras que não considerem posicionamentos cadastrados como decisão administativa;
+  - Inclusão de opções de análise, agrupando opções existentes e acrescentando a opção "desconsiderar decisão administrativa", o que permite realizar projeções outras que não considerem posicionamentos cadastrados como decisão administrativa;
   - Ajuste na rotina de projeção para considerar a titulação do vínculo na data de vigência de cada posicionamento cadastrado, e não a titulação atual, o que permite melhor adequação da projeção.
 
 [OUTROS]
@@ -315,7 +353,7 @@ Versão 2.3.2.0 (Atual)
 
 - Distribuição do sistema alterada para a arquitetura de software de 64 bits.
 - Inclusão de atalho para o sistema no menu de contexto do SO Windows.
-- Ajuste para suporte a drivers ODBC MySQL de 64 bits, apos ajuste - Versão compatível recomendada MySQL ODBC 8.0.32, disponível em https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi.
+- Ajuste para suporte a drivers ODBC MySQL de 64 bits, após ajuste - Versão compatível recomendada MySQL ODBC 8.0.32, disponível em https://downloads.mysql.com/archives/get/p/10/file/mysql-connector-odbc-8.0.32-winx64.msi.
 - Abrangente remodelagem da infraestrutura de código fonte do software para implementação de suporte a transposições entre diferentes estruturas de carreiras ao longo da vida funcional do vínculo.
 - Função "Estrutura Mínima de Carreira" aprimorada e renomeada para "Projeção de Carreira", que realiza a análise de ocorrências e a prioriza sobre o histórico de posicionamentos, exceto quando houver enquadramento/transposição, posicionamento por titulação/capacitação ou decisão administrativa.
 - Em Minhas Preferências, inclusão de opções para seleção de monitor de vídeo.
@@ -546,7 +584,7 @@ Versão 2.3.2.0 (Atual)
 
 - Em Integração Sistêmica, na importação de licenças e afastamentos, realizadas as seguintes inclusões e melhorias:
   - Inclusão de verificações de alteração no primeiro dia de licença e existência de licença com período concomitante a outra já cadastrada do mesmo tipo, reduzindo o risco de cadastros em duplicidade;
-  - Aprimoramento do processo que agora é realizado com até três etapas: Importação da listagem, Auditória de Ocorrências e Análise de Ocorrências Funcionais, que passa a ser realizada para todos os vínculos e não apenas para os que ainda possuem possibilidade de progressão.
+  - Aprimoramento do processo que agora é realizado com até três etapas: Importação da listagem, Auditoria de Ocorrências e Análise de Ocorrências Funcionais, que passa a ser realizada para todos os vínculos e não apenas para os que ainda possuem possibilidade de progressão.
 
 [RELATÓRIOS]
 
@@ -848,7 +886,7 @@ Versão 2.3.2.0 (Atual)
 - Em Cadastro de Vínculos, inclusão de função de consulta ao posicionamento SIAPE e exercício de função comissionada, conforme última atualização constante do Portal da Transparência do Governo Federal.
 - Implementação de novo tipo de cadastro: Cadastro de Instituições Externas;
 - Em Cadastro de Diplomas Legais, implementação de campo que permite vinculação de um DL a uma instituição externa.
-- Em Cadastro de Remetentes, devido a restrições de autenticação SMTP por alguns provedores ou contas de e-mail, inclusão de campo Alias, isto é, um e-mail que será utilizado como máscara e que será aquele visível ao destinatário.
+- Em Cadastro de Remetentes, devido a restrições de autenticação SMTP por alguns provedores ou contas de e-mail, inclusão de campo “Alias”, isto é, um e-mail que será utilizado como máscara e que será aquele visível ao destinatário.
 
 [CARREIRAS]
 
@@ -1288,7 +1326,7 @@ Versão 2.3.2.0 (Atual)
 
 [OUTROS]
 
-- Nas tela Pesquisar DL, DLs ocultos são destacados na cor cinza.
+- Na tela Pesquisar DL, DLs ocultos são destacados na cor cinza.
 - Melhorias pontuais diversas de estabilidade e prevenção de bugs.
 
 ---
