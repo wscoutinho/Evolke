@@ -11,9 +11,47 @@ Pré-requisitos (primeira instalação):
 
 O que há de novo? Confirma as notas de versão:
 
-### Versão 2.3.3.0 (05/09/2025)
+### Versão 2.4.0.0 (05/02/2026)
 
-Versão 2.3.3.0 (Atual)
+[SISTEMA]
+
+- Em Minhas Preferências, inclusão de opções para as configurações "Ocultar Tipos Inativos" e "Ignorar Com Ocorrência Suspensiva", disponíveis em Progressões Funcionais e em Histórico de Posicionamentos, e"Ocultar Tipos Inativos", disponível em Histórico de Posicionamentos.
+
+[CADASTRO]
+
+- Em Cadastro de Carreiras e Cargos, realizadas as seguintes inclusões e melhorias:
+  - Inclusão de Cadastro de Nomenclaturas, para nomear progressões e acelerações, conforme respectiva legislação;
+  - Inclusão do campo Nomenclatura nos cadastros de Estruturas e de Acelerações.
+- Em Registro de Ocorrências Funcionais, exibição, no grid superior, do código do cargo; e, no grid inferior, o total de dias de ocorrências com datas de início e término não nulas.
+
+[CARREIRAS]
+
+- Em Histórico de Posicionamentos, realizadas as seguintes inclusões e melhorias:
+  - Inclusão do filtro "Ocultar Tipos Inativos" no recurso "Filtros Adicionais de Pesquisa";
+  - No grid superior, exibição do código do cargo e redução da descrição da titulação;
+  - Nas telas das opções Inserir Histórico e Retificar Histórico, disponíveis a partir do menu de contexto do grid inferior, inclusão do atributo "Exceção Regra Geral", que permite fixar tratamento diferenciado para casos excepcionais como a concessão da Aceleração da Progressão por Capacitação (APC) na hipótese da regra de transição, que não interfere no cômputo dos interstícios quinquenais.
+- Em Progressões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Inclusão do filtro "Ignorar Com Ocorrência Suspensiva" no recurso "Filtros Adicionais de Pesquisa", que remove do resultado da pesquisa vínculos com ocorrência suspensiva vigente, isto é, sem data de término;
+  - Inclusão do filtro "Ocultar Tipos Inativos" no recurso "Filtros Adicionais de Pesquisa";
+  - No grid superior, exibição do código do cargo e redução da descrição da titulação;
+  - Ajuste na inclusão de um posicionamento no grid inferior (minuta), de maneira a substituir o posicionamento anterior caso haja posicionamento em concessão posterior ao atual - quando isso ocorrer, uma mensagem informativa será exibida.
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - Ajuste na exibição da projeção para incluir posicionamentos persistidos com vigências futuras em relação à calculada, útil para correta exibição de enquadramentos após o alcance do topo da carreira;
+  - Correção na rotina de projeção para fixação correta da próxima vigência quando da utilização de saldo de interstício de regra de desenvolvimento anterior coincidente com a existência, no período descontado, de ocorrências funcionais que repercurtem sobre a integralização de interstício;
+  - Ajuste para tratamento de posicionamentos históricos com atributos "Posicionamento/Titulação" e "Exceção Regra Geral";
+  - Ajuste da exibição, no Grid de Análise e na exportação do relatório em formato .pdf, da nomenclatura de cada progressão, promoção, aceleração, etc., conforme definido cadastro da regra de desenvolvimento.
+
+[RELATÓRIOS]
+
+- Em Dashboard, ajustes nos gráficos em razão das novas estruturas de carreiras vigentes a partir de 2025.
+
+[OUTROS]
+
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
+
+### Versão 2.3.3.0 (05/09/2025)
 
 [TELA PRINCIPAL]
 
