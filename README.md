@@ -1,6 +1,6 @@
 ### O Evolke
 
-O Evolke é um software desenvolvido para a **gestão das carreiras** de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais, lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.
+O Evolke é um software desenvolvido para a **gestão das carreiras** de servidores Técnicos-Administrativos em Educação (TAE) e do Magistério Federal (Superior e EBTT), de que tratam as Leis nº 11.091/2005 e 12.772/2012, respectivamente. Seus recursos permitem planejar, executar e controlar concessões e progressões funcionais; lotações; gerar listagens e relatórios diversos; bem como integrar dados oriundos de arquivos e sistemas de terceiros.
 
 Pré-requisitos (primeira instalação):
 
@@ -10,6 +10,38 @@ Pré-requisitos (primeira instalação):
 ---
 
 O que há de novo? Confirma as notas de versão:
+
+### Versão 2.4.1.0 (03/09/2026)
+
+[CADASTRO]
+
+- Em Cadastro de Diplomas Legais, ajustes para cadastro de DLs sem assunto especificado, bem como ajaustes para exibição da nomenclatura reduzida dos tipos de Diplomas Legais.
+- Em Instituições e Autoridades, inclusão dos recursos de exclusão e de alternância entre instituições cadastradas.
+- Em Cadastro de Vínculos, realizadas as seguintes inclusões e melhorias:
+  - Inclusão do filtro de pesquisa para vínculo sem cargo especificado, aos quais não foram vinculados cargos e carreiras;
+  - No cadastro de novo vínculo, registro automático do Diploma Legal associado à carreira no Histórico de Posicionamentos.
+- Em Cadastro de Carreiras e Cargos, inclusão do campo Diploma Legal em Carreiras e em Regras de Desenvolvimento.
+
+[CARREIRAS]
+
+- Em Histórico de Posicionamentos, realizadas as seguintes inclusões e melhorias:
+  - Inclusão, no menu de contexto dos vínculos, opções para inclusão, ativação/inativação e exclusão de relações tipo/vínculo, disponíveis para usuários com perfil Gestor Sênior ou superior, permitida inclusão apenas de tipos inexistentes para o vínculo;
+  - Ajustes para exibição da nomenclatura reduzida dos Diplomas Legais;
+  - Possibilidade de exibição de Diplomas Legais para os posicionamentos de enquadramento/transposição, com utilização automática do DL associado à nova Regra de Desenvolvimento quando do cadastro do novo posicionamento.
+- Em Concessões Funcionais, realizadas as seguintes inclusões e melhorias:
+  - Inclusão do recurso "Filtros Adicionais de Pesquisa" e do filtro de pesquisa "Categoria";
+  - Disponibilização do atributo "Decisão Administrativa" para as concessões.
+- Em Análise de Ocorrências e Projeção de Carreira, realizadas as seguintes inclusões e melhorias:
+  - Inclusão, no menu de contexto da análise, no recurso "Editar Registro", das possibilidades de edição e inclusão de ocorrências funcionais, para fins de projeção, não incluídas no Registro de Ocorrências do vínculo;
+  - Correção, no menu de contexto da análise, no recurso "Editar Registro", da inclusão de posicionamentos e da exclusão de posicionamentos e ocorrências;
+  - Correção do cômputo em duplicidade de licenças para tratamento de saúde sobre vigência prevista do próximo posicionamento após enquadramento/transposição.
+  - Alteração da forma de cálculo da inabilitação em avaliação de desempenho, em relação a outras ocorrências concomitantes.
+
+[OUTROS]
+
+- Melhorias pontuais de estabilidade e prevenção de bugs.
+
+---
 
 ### Versão 2.4.0.0 (05/02/2026)
 
